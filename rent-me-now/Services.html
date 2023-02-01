@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Services</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="logo.png" alt="logo" id="logoHeader"></a>
+        <div id="boxContainer">
+            <table>
+                <tr>
+                    <td>
+                        <a href="#"><img src="https://img.icons8.com/material-two-tone/24/000000/search.png" /></a>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Search what you need" class="
+                        Search">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <span id="menu" onclick="toggleNav()">Menu</span>
+        <div id="linecontainer" onclick="toggleNav()">
+            <div id="firstline"></div>
+            <div id="secondline"></div>
+            <div id="thirdline"></div>
+        </div>
+    </header>
+
+    <p id="our_services">OUR SERVICES</p>
+    <img src="Location.jpg">
+    <p id="erl">EINDHOVEN ROTTERDAM LEEUWARDEN </p>
+    <span class="AmDeEn" id="a">AMSTERDAM</span>
+    <span class="AmDeEn" id="d">DEN HAAG</span>
+    <span class="AmDeEn" id="e">ENSCHEDE</span>
+    <img src="Clock.jpg">
+    <p id="working_time">MONDAY - SATURDAY <br> 24/7</p>
+    <img src="Phone.jpg">
+    <p id="phone_numbers">+31 06 000 000 00 <br> 425 555 1212</p>
+    <img src="Letter.jpg">
+    <p id="email">RENT.ME.NOW@SERVICE.NL</p>
+    <button type="button">Leave a request</button>
+    <p id="map_description">You can see our locations on the map. <br>
+        You can find us in 6 different cities in the Netherlands. We are ready to make your experience a pleasant one :)
+    </p>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d595877.0692801669!2d4.782712972193555!3d51.82345079977407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609c3db87e4bb%3A0xb3a175ceffbd0a9f!2z0J3QuNC00LXRgNC70LDQvdC00LjRjw!5e0!3m2!1sbg!2sbg!4v1641383288872!5m2!1sbg!2sbg"
+        width="700" height="430"
+        style="position:relative; border: 24px solid white; margin-bottom: 20%; top: 160px; left: 750px;"
+        allowfullscreen="" loading="lazy" id="map"></iframe>
+    <!--img src="Services_map.jpg"-->
+
+    <aside id="nav-sidebar">
+        <ul>
+            <li><span>MENU</span></li>
+            <li><a href="index.html">Home </a></li>
+            <li><a href="cars.html">Vehicles</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Insurance.html">Insurance</a></li>
+            <li><a href="OurContacs.html">Contact Us</a></li>
+            <li><a href="BlogPage.html">Blog/Tips</a></li>
+        </ul>
+    </aside>
+
+    <footer>
+        <img src="logo.png" alt="" id="logoFooter">
+        <nav class="navFooter">
+            <ul class="navList">
+                <li id="home"><a href="index.html">Home </a></li>
+                <li id="vehicles"><a href="cars.html">Vehicles</a></li>
+                <li id="services"><a href="Services.html">Services</a></li>
+                <li id="insurance"><a href="Insurance.html">Insurance</a></li>
+                <li id="contact_us"><a href="OurContacs.html">Contact Us</a></li>
+                <li id="Blog_Tips"><a href="BlogPage.html">Blog/Tips</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

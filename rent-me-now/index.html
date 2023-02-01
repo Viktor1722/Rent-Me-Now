@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Rent Me Now</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="indexHome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="bg"></div>
+    <header>
+        <a href="index.html"><img src="RMN.png" alt="logo" id="logoHeader"></a>
+        <div id="boxContainer">
+            <table>
+                <tr>
+                    <td>
+                        <a href="#"><img src="Search.png" id="Search"></a>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Search what you need" class="
+                        Search">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="linecontainer" onclick="toggleNav()">
+            <div id="firstline"></div>
+            <div id="secondline"></div>
+            <div id="thirdline"></div>
+        </div>
+
+    </header>
+
+    <div>
+        <div id="blue_line"></div>
+        <span id="Ukraine">Netherlands</span>
+        <span id="Carpathians">Eindhoven</span>
+        <p id="do_you_need_a_car">DO YOU NEED A CAR?</p>
+        <a href="cars.html"><button type="button">Reserve a car</button></a>
+        <img src="Left_arrow.png" id="left_arrow">
+        <img src="Right_arrow.png" id="right_arrow">
+    </div>
+
+    <div id="How_to_choose_the_right_car_for_rent">
+        <div id="black_line"></div>
+        <p>MORGAN <b>FLAT</b></p>
+        <p>HOW TO CHOOSE THE RIGHT CAR FOR RENT</p>
+        <p>If you are a tourist who wants to explore hilly areas, you should pick one of our SUVs. They are
+            suitable for such terrains <br>
+            Simple as that! :) </p>
+        <a href="BlogPage.html"><button type="button" id="More_tips">More tips</button></a>
+    </div>
+    <div id="How_to_choose_the_right_car_for_rent2">
+        <div id="black_line2"></div>
+        <p> GEORGE <b>RICHARDSON</b></p>
+        <p>HOW TO CHOOSE THE RIGHT CAR FOR RENT</p>
+        <p>Keen on sightseeing inside the city? You can go for a sedan. </p>
+    </div>
+    <div id="How_to_choose_the_right_car_for_rent3">
+        <div id="black_line3"></div>
+        <p> BOYAN <b>STOYANOV</b></p>
+        <p>HOW TO CHOOSE THE RIGHT CAR FOR RENT</p>
+        <p> Maybe you want to move houses or you need to transport a lot of heavy goods?<br>
+            Perfect! Come and check our vans - they will get the job done for you since they have large capacity. </p>
+    </div>
+
+    <section id="cars">
+        <p id="first_paragraph">CHOOSE YOUR CAR</p>
+        <div id="Honda">
+            <div id="line1"></div>
+            <p id="type_sedan">TYPE <b>SEDAN</b></p>
+            <p id="honda_civic">HONDA CIVIC</p>
+            <img src="Honda_Civic.png">
+            <div id="car_icons">
+                <img src="Engine.png" id="engine"> <span>2.0 FOUR CYLINDER</span>
+                <img src="Top_speed.png" id="top_speed"><span>205 KM/H</span>
+                <img src="Gearbox.png" id="gearbox"> <span>AUTOMATIC</span>
+                <img src="Seats.png" id="seats"> <span>5 SEATS</span>
+                <img src="Age_limit.png" id="age_limit"> <span>25+YEAR</span>
+            </div>
+            <button type="button">93 EUR/DAY</button>
+            <a href="Civic.html"><button type="button" id="HondaD">MORE DETAILS</button></a>
+        </div>
+        <div id="Audi">
+            <div id="line2"></div>
+            <p id="type_suv">TYPE <b>SUV</b></p>
+            <p id="audi_sq8">AUDI SQ8</p>
+            <img src="Audi_Sq8.png">
+            <div id="car_icons2">
+                <img src="Engine.png" id="engine"> <span>3.0 V6</span>
+                <img src="Top_speed.png" id="top_speed2"><span>255 KM/H</span>
+                <img src="Gearbox.png" id="gearbox2"> <span>AUTOMATIC</span>
+                <img src="Seats.png" id="seats2"> <span>5 SEATS</span>
+                <img src="Age_limit.png" id="age_limit2"> <span>22+YEAR</span>
+            </div>
+            <button type="button">93 EUR/DAY</button>
+            <a href="SQ8.html"><button type="button" id="AudiD">MORE DETAILS</button></a>
+        </div>
+        <div id="Mercedes">
+            <div id="line3"></div>
+            <p id="type_van">TYPE <b>VAN</b></p>
+            <p id="mercedes_benz_v">MERCEDES-BENZ V</p>
+            <img src="Mercedes_Benz_V.png">
+            <div id="car_icons3">
+                <img src="Engine.png" id="engine"> <span>2.0D AT</span>
+                <img src="Top_speed.png" id="top_speed3"><span>195 KM/H</span>
+                <img src="Gearbox.png" id="gearbox3"> <span>AUTOMATIC</span>
+                <img src="Seats.png" id="seats3"> <span>7 SEATS</span>
+                <img src="Age_limit.png" id="age_limit3"> <span>30+YEAR</span>
+            </div>
+            <button type="button">93 EUR/DAY</button>
+            <a href="VClass.html"><button type="button" id="MercedesD">MORE DETAILS</button></a>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h1> OUR BENEFITS</h1>
+            <div class="topnav">
+                <a href="#home" class="active">
+                    <h2>First benefit</h2>
+                </a>
+                <div id="myLinks">
+                    <p>We offer fast services and our courteous staff will be happy to help you choose the right vehicle
+                        for your needs.
+                    </p>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+
+
+            <div class="topnav2">
+                <a href="#home" class="active2">
+                    <h2>Second benefit</h2>
+                </a>
+                <div id="myLinks2">
+                    <p>
+                        An unexpected issue takes place and you cannot continue your journey? No problem, just call us
+                        on one of our phone numbers and we will arrive on the location to help you. <br>
+                        We will have a mobile app soon.
+                    </p>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction2()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+
+            <div class="topnav3">
+                <a href="#home" class="active3">
+                    <h2>Third Benefit</h2>
+                </a>
+                <div id="myLinks3">
+                    <p>
+                        If you are renting a vehicle from us for a second time, you are participating for a special
+                        voucher giving you the chance next time to rent a vehicle for free. Cool, huh? :)
+                    </p>
+
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction3()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+
+        <div>
+            <aside>
+                <h2> LEARN MORE ABOUT OUR COMPANY HERE</h2>
+                <div id="benefits_description">
+                    <p id="company_description">We are a young and ambitious company tailored completely to the needs of
+                        the
+                        customer. We believe
+                        that everyone deserves to get the most out of their vacation, business visit or just anything.
+                        <br>
+                        Eager to find out? Just click and learn:)
+                    </p><br><br><br>
+                    <ul>
+                        <li> <a href="Services.html" class="fact1">We are happy to see happy customers!</a></li><br>
+                        <li><a href="Insurance.html" class="fact1">Something unexpected happens? We are here to cover
+                                it!</a></li>
+                    </ul>
+                </div>
+
+
+            </aside>
+        </div>
+    </section>
+    <section id="s_our_contacts">
+        <p id="our_contacts">OUR CONTACTS</p>
+        <img src="Location.jpg">
+        <p id="erl">EINDHOVEN ROTTERDAM LEEUWARDEN </p>
+        <span class="AmDeEn" id="a">AMSTERDAM</span>
+        <span class="AmDeEn" id="d">DEN HAAG</span>
+        <span class="AmDeEn" id="e">ENSCHEDE</span>
+        <img src="Clock.jpg">
+        <p id="working_time">MONDAY - SATURDAY <br> 24/7</p>
+        <img src="Phone.jpg">
+        <p id="phone_numbers">+31 06 000 000 00 <br> 425 555 1212</p>
+        <img src="Letter.jpg">
+        <p id="email">RENT.ME.NOW@SERVICE.NL</p>
+        <a href="OurContacs.html"><button type="button" id="More_information">More information</button></a>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d595877.0692801669!2d4.782712972193555!3d51.82345079977407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609c3db87e4bb%3A0xb3a175ceffbd0a9f!2z0J3QuNC00LXRgNC70LDQvdC00LjRjw!5e0!3m2!1sbg!2sbg!4v1641383288872!5m2!1sbg!2sbg"
+            width="700" height="450"
+            style="position:relative; border: 24px solid white; margin-bottom: 20%; top: 160px; left: 48%;"
+            allowfullscreen="" loading="lazy" id="map"></iframe>
+        <!--img src="Services_map.jpg"-->
+    </section>
+
+    <aside id="nav-sidebar">
+        <ul>
+            <li><span>MENU</span></li>
+            <li><a href="index.html">Home </a></li>
+            <li><a href="cars.html">Vehicles</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Insurance.html">Insurance</a></li>
+            <li><a href="OurContacs.html">Contact Us</a></li>
+            <li><a href="BlogPage.html">Blog/Tips</a></li>
+        </ul>
+    </aside>
+
+    <footer>
+        <img src="logo.png" alt="" id="logoFooter">
+        <nav class="navFooter">
+            <ul class="navList">
+                <li id="home"><a href="index.html">Home </a></li>
+                <li id="vehicles"><a href="cars.html">Vehicles</a></li>
+                <li id="services"><a href="Services.html">Services</a></li>
+                <li id="insurance"><a href="Insurance.html">Insurance</a></li>
+                <li id="contact_us"><a href="OurContacs.html">Contact Us</a></li>
+                <li id="Blog_Tips"><a href="BlogPage.html">Blog/Tips</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="main2.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

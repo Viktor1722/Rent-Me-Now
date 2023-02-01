@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="OurContacts.css">
+    <title>Our Contacts</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="logo.png" alt="logo" id="logoHeader"></a>
+        <div id="boxContainer">
+            <table>
+                <tr>
+                    <td>
+                        <input type="text" placeholder="Search" class="Search">
+                    </td>
+                    <td>
+                        <a href="#"><img src="https://img.icons8.com/material-two-tone/24/000000/search.png" /></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <span id="menu" onclick="toggleNav()">Menu</span>
+        <div id="linecontainer" onclick="toggleNav()">
+            <div id="firstline"></div>
+            <div id="secondline"></div>
+            <div id="thirdline"></div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h1><b>OUR CONTACTS</b></h1>
+            <p class="firstParagraph"><b>EINDHOVEN | AMSTERDAM | ROTTERDAM | DEN HAAG | LEEUWARDEN | ENSCHEDE</b></p>
+            <img src="Location.jpg" class="locationPNG">
+            <p class="secondParagraph"><b>MONDAY - SATURDAY | 9 AM - 6 PM</b></p>
+            <img src="Clock.jpg" class="clockPNG">
+            <p class="thirdParagraph"><b>+31 06 000 000 00 | 425 555 1212</b></p>
+            <img src="Phone.jpg" class="phonePNG">
+            <p class="fourthParagraph"><b>RENT.ME.NOW@INFO.NL</b></p>
+            <img src="Letter.jpg" class="emailPNG">
+            <p id="map_description">You can see our locations on the map.</p>
+            <button class="button" type="button">Leave a request</button>
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=eindhoven&t=&z=11&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                        href="https://www.whatismyip-address.com/divi-discount/"></a><br>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <aside id="nav-sidebar">
+        <ul>
+            <li><span>MENU</span></li>
+            <li><a href="index.html">Home </a></li>
+            <li><a href="cars.html">Vehicles</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Insurance.html">Insurance</a></li>
+            <li><a href="OurContacs.html">Contact Us</a></li>
+            <li><a href="BlogPage.html">Blog/Tips</a></li>
+        </ul>
+    </aside>
+
+    <footer>
+        <img src="logo.png" alt="" id="logoFooter">
+        <nav class="navFooter">
+            <ul class="navList">
+                <li id="home"><a href="index.html">Home </a></li>
+                <li id="vehicles"><a href="cars.html">Vehicles</a></li>
+                <li id="services"><a href="Services.html">Services</a></li>
+                <li id="insurance"><a href="Insurance.html">Insurance</a></li>
+                <li id="contact_us"><a href="OurContacs.html">Contact Us</a></li>
+                <li id="Blog_Tips"><a href="BlogPage.html">Blog/Tips</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>

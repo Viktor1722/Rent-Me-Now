@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap');
+
+*{
+    
+    margin:0;
+}
+
+body{
+    background-color: #5681FF;
+    overflow-x: hidden;
+}
+
+#main {
+  background-image: url("Car.JPEG");
+}
+
+/*HEADER*/
+
+#logoHeader {
+  height: 100px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+}
+
+#boxContainer {
+  position: relative;
+  right: 11%;
+  margin-top: 1.5em;
+  border: 1px solid #4169E1;
+  padding: 5px;
+  height: 30px;
+}
+
+.Search{
+  background: transparent;
+  border: none;
+}
+
+#menu{
+position: absolute;
+width: 28px;
+height: 9px;
+left: 91%;
+top: 4.5%;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+cursor: pointer;
+
+color: #5681FF;
+
+}
+
+#linecontainer{
+  position: absolute;
+  width: 3%;
+  height: 6%;
+  right: 2%;
+  top: 3%;
+  cursor: pointer;
+  }
+
+  #firstline{
+    position: relative;
+    width: 70%;
+    height: 0px;
+    left: 0%;
+    top: 20%;
+    border-top: 2px solid #000000;
+    cursor: pointer;
+  }
+
+  #secondline{
+    position: relative;
+    width: 40%;
+    height: 0px;
+    left: 0%;
+    top: 40%;
+    border-top: 2px solid #000000;
+    cursor: pointer;
+  }
+
+  #thirdline{
+    position: relative;
+    width: 70%;
+    height: 0px;
+    left: 0%;
+    top: 60%;
+    border-top: 2px solid #000000;
+    cursor: pointer;
+    
+  }
+
+#nav-sidebar{
+  position: absolute;
+  right: -6%;
+  bottom: 0;
+  width: 0px;
+  height: calc(84vh);
+  background-color: #FFFFFF;
+  z-index: 1000;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+#nav-sidebar ul{
+  padding-top: 60px;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+#nav-sidebar ul li{
+  line-height: 60px;
+  list-style: none;
+}
+
+#nav-sidebar ul li span, #nav-sidebar ul li a{
+  display: block;
+  height: 60px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+  font-family: Roboto;
+  font-size: 30px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+#nav-sidebar ul li a:hover{
+  text-decoration: underline #5681FF;
+}
+
+/*HEADER*/
+
+#our_services{
+position: absolute;
+height: 56px;
+left: 83px;
+top: 202px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 48px;
+line-height: 56px;
+text-transform: uppercase;
+border-bottom:#FFFFFF solid 3px;
+
+color: #FFFFFF;
+}
+
+#our_services + img{
+    position: absolute;
+    top: 44%;
+    left: 5%;
+}
+
+#erl{
+width: 330px;
+height: 16px;
+left: 9%;
+top: 44%;
+position: absolute;
+color:#FFFFFF;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+word-spacing: 30px;
+}
+
+#e + img{
+    position: absolute;
+    top: 54%;
+    left: 4.6%;
+}
+
+.AmDeEn{
+  position: absolute;
+  color:#FFFFFF;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+#a{
+
+  left: 8.9%;
+  top: 46.5%;
+}
+
+#d{
+  left: 16.2%;
+  top: 46.5%;
+}
+
+#e{
+  left: 24%;
+  top: 46.5%;
+}
+
+#map_description{
+position: relative;
+width: 411px;
+height: 42px;
+left: 53%;
+top: 70px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 24px;
+
+color: #FFFFFF;
+
+}
+
+#map{
+position: relative;
+left: 47%;
+top: 50%;
+}
+
+#working_time{
+position: absolute;
+width: 153px;
+height: 16px;
+left: 9%;
+top: 56%;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+color: #FFFFFF;
+}
+
+#working_time + img{
+    position: absolute;
+    top: 63%;
+    left: 4.6%;
+}
+
+#phone_numbers{
+position: absolute;
+width: 153px;
+height: 16px;
+left: 9%;
+top: 65%;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+color: #FFFFFF;
+}
+
+#phone_numbers + img{
+    position: absolute;
+    top: 73%;
+    left: 4.6%;
+}
+
+#email{
+position: absolute;
+width: 272px;
+height: 16px;
+left: 9%;
+top: 74%;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+color: #FFFFFF;
+}
+
+#email + button{
+position: absolute;
+top: 85%;
+left: 4.8%;
+width: 10%;
+height: 7%;
+color: #5681FF;
+font-weight: bold;
+}
+
+/*FOOTER*/
+#logoFooter{
+  position: relative;
+  top: -35px;
+  height: 100px;
+  margin-top: 2em;
+}
+
+footer{
+  position: absolute;
+  top: 112%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+  align-items: center;
+  background-color: #FFFFFF;
+}
+
+.navList > li {
+ color: black;
+ text-decoration: none;
+ 
+}
+
+.navList > li,a {
+color: black;
+text-decoration: none;
+font-family: Roboto;
+font-size: 24px;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+#home{
+position: relative;
+top: -50px;
+left: 9%;
+}
+
+#vehicles{
+position: relative;
+top: 0px;
+left: -4%;
+}
+
+#services{
+position: relative;
+top: 50px;
+left: -21.5%;
+}
+
+#insurance{
+  position: relative;
+  top: -50px;
+  left: -3%;
+}
+
+#contact_us{
+  position: relative;
+  top: 0px;
+  left: -23.3%;
+}
+
+#Blog_Tips{
+  position: relative;
+  top: 21px;
+  left: 9.5%;
+}
+
+.navFooter{
+ list-style-type: none;
+ text-align: center;
+  margin-left: 25em;
+}
+
+.navFooter li {
+ display: inline-block;
+ padding: 0px 20px;
+ font-size: 1.2em;
+}
+
+.navFooter li a{
+transition: all 0.3s ease 0s;
+}
+
+.navFooter li a:hover{
+color: #4169E1;
+}
+/*FOOTER*/

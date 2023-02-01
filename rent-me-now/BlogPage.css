@@ -1,0 +1,699 @@
+    * {
+        margin: 0;
+    }
+    /*Header*/
+    
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: white;
+    }
+    
+    #boxContainer {
+        position: relative;
+        right: 11%;
+        margin-top: 2.5em;
+        border: 1px solid #5681FF;
+        padding: 5px;
+        height: 30px;
+    }
+    
+    .Search {
+        background: transparent;
+        border: none;
+        padding: 10px;
+    }
+    
+    #menu {
+        position: absolute;
+        width: 28px;
+        height: 9px;
+        left: 91%;
+        top: 5.3%;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        color: #5681FF;
+        cursor: pointer;
+    }
+    
+    #firstline {
+        position: absolute;
+        width: 1.8%;
+        height: 0px;
+        left: 95%;
+        top: 5.2%;
+        border-top: 2px solid #000;
+        cursor: pointer;
+    }
+    
+    #secondline {
+        position: absolute;
+        width: 1.2%;
+        height: 0px;
+        left: 95%;
+        top: 6.2%;
+        border-top: 2px solid #000;
+        cursor: pointer;
+    }
+    
+    #thirdline {
+        position: absolute;
+        width: 1.8%;
+        height: 0px;
+        left: 95%;
+        top: 7.2%;
+        border-top: 2px solid #000;
+        cursor: pointer;
+    }
+
+    #nav-sidebar{
+        position: absolute;
+        right: -6%;
+        bottom: 0;
+        width: 0px;
+        height: calc(84vh);
+        background-color: #FFFFFF;
+        z-index: 1000;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      #nav-sidebar ul{
+        padding-top: 60px;
+        overflow: hidden;
+        visibility: hidden;
+      }
+      
+      #nav-sidebar ul li{
+        line-height: 60px;
+        list-style: none;
+      }
+      
+      #nav-sidebar ul li span, #nav-sidebar ul li a{
+        display: block;
+        height: 60px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #000000;
+        font-family: Roboto;
+        font-size: 30px;
+        white-space: nowrap;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      #nav-sidebar ul li a:hover{
+        text-decoration: underline #5681FF;
+      }
+    
+    .Search:focus {
+        outline: none;
+    }
+    /*Header*/
+    
+    h1 {
+        color: #5681FF;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        margin-left: 1.7em;
+        margin-bottom: 0.6em;
+        padding-top: 1em;
+        font-size: 3em;
+        display: inline-block;
+        border-bottom: 4px solid #5681FF;
+    }
+    
+    body {
+        font-family: 'Roboto', sans-serif;
+        overflow-x: hidden;
+    }
+    
+    main {
+        border-bottom: 1px solid #5681FF;
+        border-top: 1px solid #5681FF;
+        background-color: white;
+    }
+    
+    .blogSection1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .blogSection1>div {
+        margin-top: 2em;
+        margin-left: 2em;
+        height: 300px;
+        width: 500px;
+        background-color: #5681FF;
+        padding: 1.2em;
+        margin-bottom: 2em;
+    }
+    
+    .blogSection1>div>p {
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        border-top: 3px solid darkblue;
+        display: inline-block;
+        text-align: center;
+        margin-left: 3.5em;
+        margin-top: 0.5em;
+    }
+    
+    .blogSection1>div>a {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: white;
+        font-size: 2.4em;
+        margin-top: 1.2em;
+        text-align: center;
+    }
+    
+    .blogSection2 {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 3.5em;
+        margin-top: 3.5em;
+        margin-left: 5.5em;
+    }
+    
+    .blogSection2>div {
+        height: 120px;
+        width: 550px;
+        background-color: white;
+        margin-left: 7.8em;
+        margin-top: 4em
+    }
+    
+    .blogSection2>div>h2 {
+        font-size: 3em;
+        border-bottom: 3px solid #5681FF;
+    }
+    
+    .blogSection2>div>h3 {
+        font-size: 2em;
+        margin-left: 3.1em;
+    }
+    
+    .blogSection2>div>p {
+        margin-left: 5.3em;
+        font-size: 1.2em;
+    }
+    
+    .picBlog2 {
+        border-radius: 20em;
+        width: 400px;
+    }
+    
+    h2 {
+        margin-left: 2em;
+        display: inline-block;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    h3 {
+        color: black;
+        margin-left: 2.7em;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    p {
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .blogTips1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+    
+    .blogTips1>div {
+        margin-top: 2em;
+        margin-left: 2em;
+        margin-bottom: 2em;
+        height: 300px;
+        width: 500px;
+        background-color: #5681FF;
+        padding: 1.2em;
+    }
+    
+    .blogTips1>div>p {
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        border-top: 3px solid darkblue;
+        display: inline-block;
+        margin-left: 3.5em;
+        margin-top: 0.5em;
+    }
+    
+    .blogTips1>div>a {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: white;
+        font-size: 2.4em;
+        margin-top: 1.2em;
+        text-align: center;
+    }
+    
+    .blogTips2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+    
+    .blogTips2>div {
+        margin-top: 2em;
+        margin-left: 2em;
+        margin-bottom: 2em;
+        height: 300px;
+        width: 500px;
+        background-color: #5681FF;
+        padding: 1.2em;
+    }
+    
+    .blogTips2>div>p {
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        border-top: 3px solid darkblue;
+        display: inline-block;
+        margin-left: 3.5em;
+        margin-top: 0.5em;
+    }
+    
+    .blogTips2>div>a {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: white;
+        font-size: 2.4em;
+        margin-top: 1.2em;
+        text-align: center;
+    }
+    /*FOOTER*/
+    
+    #logoFooter {
+        position: relative;
+        top: -35px;
+        height: 100px;
+        margin-top: 2em;
+    }
+    
+    footer {
+        display: flex;
+        flex-direction: row;
+        height: 200px;
+        align-items: center;
+        background-color: white;
+    }
+    
+    .navList>li {
+        color: black;
+        text-decoration: none;
+    }
+    
+    .navList>li,
+    a {
+        color: black;
+        text-decoration: none;
+        font-family: Roboto;
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    
+    #home{
+        position: relative;
+        top: -50px;
+        left: 21%;
+        }
+        
+        #vehicles{
+        position: relative;
+        top: 0px;
+        left: 8.2%;
+        }
+        
+        #services{
+        position: relative;
+        top: 50px;
+        left: -9.5%;
+        }
+        
+        #insurance{
+          position: relative;
+          top: -50px;
+          left: 10%;
+        }
+        
+        #contact_us{
+          position: relative;
+          top: 0px;
+          left: -10.3%;
+        }
+        
+        #Blog_Tips{
+          position: relative;
+          top: 20px;
+          left: 22.3%;
+        }
+    
+    .navFooter {
+        list-style-type: none;
+        text-align: center;
+        margin-left: 25em;
+    }
+    
+    .navFooter li {
+        display: inline-block;
+        padding: 0px 20px;
+        font-size: 1.2em;
+    }
+    
+    .navFooter li a {
+        transition: all 0.3s ease 0s;
+    }
+    
+    .navFooter li a:hover {
+        color: #5681FF;
+    }
+    /*FOOTER*/
+
+
+    @media (max-width:1600px) {
+        h1 {
+            margin-left: 1.3em;
+        }
+
+        #menu {
+            position: absolute;
+            width: 28px;
+            height: 9px;
+            left: 90%;
+            top: 7%;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            color: #5681FF;
+        }
+        
+        #firstline {
+            position: absolute;
+            width: 1.8%;
+            height: 0px;
+            left: 94%;
+            top: 7.2%;
+            border-top: 2px solid #000;
+        }
+        
+        #secondline {
+            position: absolute;
+            width: 1.2%;
+            height: 0px;
+            left: 94%;
+            top: 8.2%;
+            border-top: 2px solid #000;
+        }
+        
+        #thirdline {
+            position: absolute;
+            width: 1.8%;
+            height: 0px;
+            left: 94%;
+            top: 9.2%;
+            border-top: 2px solid #000;
+        }
+
+        .blogSection1>div {
+            margin-top: 2em;
+            margin-left: 2em;
+            height: 280px;
+            width: 400px;
+            background-color: #5681FF;
+            padding: 1.2em;
+            margin-bottom: 2em;
+        }
+        .blogSection1>div>p{
+            margin-left: 0.7em;
+        }
+        .blogSection2>div{
+            margin-left: 6.1em;
+        }
+        
+        .blogTips1>div {
+            margin-top: 2em;
+            margin-left: 2em;
+            height: 280px;
+            width: 400px;
+            background-color: #5681FF;
+            padding: 1.2em;
+            margin-bottom: 2em;
+        }
+        .blogTips1>div>p{
+            margin-left: 0.7em;
+        }
+        .blogTips2>div {
+            margin-top: 2em;
+            margin-left: 2em;
+            height: 280px;
+            width: 400px;
+            background-color: #5681FF;
+            padding: 1.2em;
+            margin-bottom: 2em;
+        }
+        .blogTips2>div>p{
+            margin-left: 0.7em;
+        }
+        .picBlog2 {
+            border-radius: 20em;
+            margin-left: -1em;
+            width: 300px;
+        }
+        
+    }
+    
+    @media (max-width:970px) {
+        h1 {
+            margin-left: 0.7em;
+        }
+        .blogSection1>div>a {
+            margin-top: 5em;
+            font-size: 1.25em;
+        }
+        .blogSection2>div {
+            margin-left: 1em;
+            margin-top: 1.5em;
+        }
+        .picBlog2 {
+            border-radius: 20em;
+            margin-left: -1em;
+            width: 350px;
+        }
+        .blogTips1>div>a {
+            margin-top: 5em;
+            font-size: 1.25em;
+        }
+        .blogTips2>div>a {
+            margin-top: 5em;
+            font-size: 1.25em;
+        }
+        .navFooter {
+            list-style-type: none;
+            text-align: center;
+            margin-left: 15em;
+        }
+    }
+    
+    @media (max-width:800px) {
+        h1 {
+            margin-left: 0.7em;
+        }
+        .blogSection1>div>a {
+            margin-top: 5em;
+            font-size: 1.25em;
+        }
+        .blogSection2>div {
+            margin-left: 1em;
+            margin-top: 1.5em;
+            width: 500px;
+        }
+        .blogSection2>div>h2 {
+            font-size: 2em;
+            margin-left: 2.3em;
+        }
+        .blogSection2>div>h3 {
+            font-size: 1.5em;
+        }
+        .blogSection2>div>p {
+            font-size: 0.9em;
+        }
+        .picBlog2 {
+            border-radius: 20em;
+            margin-left: -1em;
+            width: 300px;
+        }
+        .blogTips1>div>a {
+            margin-top: 5em;
+            font-size: 1.25em;
+        }
+        .blogTips2>div>a {
+            margin-top: 5em;
+            font-size: 1.25em;
+        }
+        .navFooter {
+            list-style-type: none;
+            text-align: center;
+            margin-left: 15em;
+        }
+    }
+    
+    @media (max-width:670px) {
+        .blogSection1>div>a {
+            font-size: 1.1em;
+        }
+        .blogTips1>div>a {
+            font-size: 1.1em;
+        }
+        .blogSection2>div {
+            margin-top: 1.5em;
+            width: 600px;
+        }
+        .blogSection2>div>h2 {
+            font-size: 2em;
+            margin-left: 2.3em;
+        }
+        .blogSection2>div>h3 {
+            font-size: 1.5em;
+        }
+        .blogSection2>div>p {
+            font-size: 1em;
+        }
+        .blogSection2 {
+            margin-left: 3em;
+        }
+        .picBlog2 {
+            border-radius: 20em;
+            margin-left: -2em;
+            width: 250px;
+        }
+        .blogTips2>div>a {
+            font-size: 1.1em;
+        }
+        .navFooter {
+            list-style-type: none;
+            text-align: center;
+            margin-left: 15em;
+        }
+    }
+    
+    @media (max-width:600px) {
+        .blogSection1>div>a {
+            font-size: 1.1em;
+        }
+        .blogTips1>div>a {
+            font-size: 1.1em;
+        }
+        .blogTips2>div>a {
+            font-size: 1.1em;
+        }
+        .blogSection1>div>p {
+            margin-left: 1em;
+        }
+        .blogTips1>div>p {
+            margin-left: 1em;
+        }
+        .blogTips2>div>p {
+            margin-left: 1em;
+        }
+        .blogSection2>div {
+            margin-top: 1.5em;
+            width: 600px;
+        }
+        .blogSection2>div>h2 {
+            font-size: 2em;
+            margin-left: 2.3em;
+        }
+        .blogSection2>div>h3 {
+            font-size: 1.5em;
+        }
+        .blogSection2>div>p {
+            font-size: 0.8em;
+        }
+        .blogSection2 {
+            margin-left: 3em;
+        }
+        .picBlog2 {
+            border-radius: 20em;
+            margin-left: -2em;
+            width: 250px;
+        }
+        .navFooter {
+            list-style-type: none;
+            text-align: center;
+            margin-left: 10em;
+        }
+    }
+    
+    @media (max-width:500px) {
+        .blogSection1>div>a {
+            font-size: 1.1em;
+        }
+        .blogTips1>div>a {
+            font-size: 1.1em;
+        }
+        .blogTips2>div>a {
+            font-size: 1.1em;
+        }
+        .blogSection1>div>p {
+            margin-left: 1em;
+        }
+        .blogTips1>div>p {
+            margin-left: 1em;
+        }
+        .blogTips2>div>p {
+            margin-left: 1em;
+        }
+        .blogSection2>div {
+            margin-top: 1em;
+            width: 600px;
+        }
+        .blogSection2>div>h2 {
+            font-size: 2em;
+            margin-left: 2.3em;
+        }
+        .blogSection2>div>h3 {
+            font-size: 1.5em;
+        }
+        .blogSection2>div>p {
+            font-size: 0.75em;
+        }
+        .blogSection2 {
+            margin-left: 3em;
+        }
+        .picBlog2 {
+            border-radius: 20em;
+            margin-left: -2em;
+            width: 200px;
+        }
+        .navFooter {
+            list-style-type: none;
+            text-align: center;
+            margin-left: 5em;
+        }
+    }

@@ -1,0 +1,1045 @@
+* {
+    margin: 0;
+}
+
+#logoHeader {
+    height: 100px;
+}
+
+
+/*Header*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+}
+
+#boxContainer {
+    position: relative;
+    right: 11%;
+    margin-top: 1.5em;
+    border: 1px solid #5681FF;
+    padding: 5px;
+    height: 30px;
+}
+
+.Search {
+    background: transparent;
+    border: none;
+    padding: 10px;
+}
+
+#menu {
+    position: absolute;
+    width: 28px;
+    height: 9px;
+    left: 90%;
+    top: 5%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    color: #5681FF;
+}
+
+#linecontainer {
+    position: absolute;
+    width: 3%;
+    height: 6%;
+    right: 2%;
+    top: 3%;
+    cursor: pointer;
+}
+
+#firstline {
+    position: relative;
+    width: 70%;
+    height: 0px;
+    left: 0%;
+    top: 20%;
+    border-top: 2px solid #000000;
+    cursor: pointer;
+}
+
+#secondline {
+    position: relative;
+    width: 40%;
+    height: 0px;
+    left: 0%;
+    top: 40%;
+    border-top: 2px solid #000000;
+    cursor: pointer;
+}
+
+#thirdline {
+    position: relative;
+    width: 70%;
+    height: 0px;
+    left: 0%;
+    top: 60%;
+    border-top: 2px solid #000000;
+    cursor: pointer;
+}
+
+#nav-sidebar {
+    position: absolute;
+    right: -6%;
+    bottom: 0;
+    width: 0px;
+    height: calc(86.5vh);
+    background-color: #FFFFFF;
+    z-index: 1000;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+#nav-sidebar ul {
+    padding-top: 60px;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+#nav-sidebar ul li {
+    line-height: 60px;
+    list-style: none;
+}
+
+#nav-sidebar ul li span,
+#nav-sidebar ul li a {
+    display: block;
+    height: 60px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    font-family: Roboto;
+    font-size: 30px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+#nav-sidebar ul li a:hover {
+    text-decoration: underline #5681FF;
+}
+
+
+/*Header*/
+
+main {
+    height: 730px;
+    background-color: #5681FF;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+}
+
+.Search:focus {
+    outline: none;
+}
+
+h1 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin-left: 1.8em;
+    padding-top: 2em;
+    font-size: 2.5em;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #5681FF;
+    position: relative;
+    color: white;
+    width: 1300px;
+    margin-left: 1em;
+}
+
+.topnav #myLinks {
+    display: none;
+    margin-left: 1em;
+    margin-top: 2em;
+}
+
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.topnav a.icon {
+    background: #5681FF;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 2px;
+    margin-top: 0.5em;
+}
+
+.active {
+    background-color: #5681FF;
+    color: white;
+    border-top: 1px rgba(255, 255, 255, 0.4) solid;
+    border-bottom: 1px rgba(255, 255, 255, 0.4) solid;
+    display: block;
+    padding-top: 20px;
+}
+
+.active>h2 {
+    font-size: 1.7em;
+}
+
+.container {
+    margin-top: 3em;
+    margin-left: 3em;
+}
+
+.topnav2 {
+    margin-top: 2em;
+    overflow: hidden;
+    background-color: #5681FF;
+    position: relative;
+    color: white;
+    width: 1300px;
+    margin-left: 1em;
+}
+
+.topnav2 #myLinks2 {
+    display: none;
+    margin-left: 1em;
+    margin-top: 2em;
+}
+
+.topnav2 a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.topnav2 a.icon {
+    background: #5681FF;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 3px;
+    margin-top: 0.5em;
+}
+
+.active2 {
+    background-color: #5681FF;
+    color: white;
+    border-top: 1px rgba(255, 255, 255, 0.4) solid;
+    border-bottom: 1px rgba(255, 255, 255, 0.4) solid;
+    display: block;
+    padding-top: 20px;
+}
+
+.active2>h2 {
+    font-size: 1.7em;
+}
+
+.topnav3 {
+    margin-top: 2em;
+    overflow: hidden;
+    background-color: #5681FF;
+    position: relative;
+    color: white;
+    width: 1300px;
+    margin-left: 1em;
+}
+
+.topnav3 #myLinks3 {
+    display: none;
+    margin-left: 1em;
+    margin-top: 1.5em;
+}
+
+.topnav3 a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.topnav3 a.icon {
+    background: #5681FF;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 2px;
+    margin-top: 0.5em;
+}
+
+.active3 {
+    background-color: #5681FF;
+    color: white;
+    border-top: 1px rgba(255, 255, 255, 0.4) solid;
+    border-bottom: 1px rgba(255, 255, 255, 0.4) solid;
+    display: block;
+    padding-top: 20px;
+}
+
+.active3>h2 {
+    font-size: 1.7em;
+}
+
+aside {
+    background-color: white;
+    width: 420px;
+    height: 480px;
+    margin-left: 5em;
+    margin-top: 3em;
+}
+
+aside>h1 {
+    color: #5681FF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.7em;
+    text-align: center;
+    margin-right: 2em;
+    margin-top: -1em;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+}
+
+.hide {
+    display: none;
+}
+
+h3 {
+    margin-top: 3em;
+    margin-left: 2.5em;
+    font-size: 1.4em;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    margin-left: 3em;
+}
+
+.info>input[type="text"] {
+    border: 1px solid #5681FF;
+    padding: 1em;
+    margin-top: 1em;
+    margin-right: 4.5em;
+}
+
+input[type="email"] {
+    border: 1px solid #5681FF;
+    padding: 1em;
+    margin-top: 1em;
+    margin-right: 4.5em;
+}
+
+input[type="phone"] {
+    border: 1px solid #5681FF;
+    padding: 1em;
+    margin-top: 1em;
+    margin-right: 4.5em;
+}
+
+.info+button {
+    background-color: #5681FF;
+    width: 200px;
+    margin-left: 8.5em;
+    margin-top: 1.5em;
+    padding: 2em;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+
+/*FOOTER*/
+
+#logoFooter {
+    position: relative;
+    top: -35px;
+    height: 100px;
+    margin-top: 2em;
+}
+
+footer {
+    position: absolute;
+    top: 112%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+.navList>li {
+    color: black;
+    text-decoration: none;
+}
+
+.navList>li,
+a {
+    color: black;
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#home {
+    position: relative;
+    top: -50px;
+    left: 51%;
+}
+
+#vehicles {
+    position: relative;
+    top: 0px;
+    left: 39%;
+}
+
+#services {
+    position: relative;
+    top: 50px;
+    left: 22.7%;
+}
+
+#insurance {
+    position: relative;
+    top: -50px;
+    left: 40%;
+}
+
+#contact_us {
+    position: relative;
+    top: 0px;
+    left: 21.3%;
+}
+
+#Blog_Tips {
+    position: relative;
+    top: 50px;
+    left: 1.5%;
+}
+
+.navFooter {
+    list-style-type: none;
+    text-align: center;
+    margin-left: 25em;
+}
+
+.navFooter li {
+    display: inline-block;
+    padding: 0px 20px;
+    font-size: 1.2em;
+}
+
+.navFooter li a {
+    transition: all 0.3s ease 0s;
+}
+
+.navFooter li a:hover {
+    color: #4169E1;
+}
+
+
+/*FOOTER*/
+
+@media (max-width:1750px) {
+    main {
+        background-color: #5681FF;
+    }
+    h1 {
+        margin-left: 1.3em;
+    }
+    .topnav {
+        margin-top: 1em;
+        overflow: hidden;
+        background-color: #5681FF;
+        position: relative;
+        color: white;
+        width: 1050px;
+        margin-left: 0.3em;
+    }
+    .topnav #myLinks {
+        display: none;
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+    .topnav2 {
+        margin-top: 2em;
+        overflow: hidden;
+        background-color: #5681FF;
+        position: relative;
+        color: white;
+        width: 1050px;
+        margin-left: 0.3em;
+    }
+    .topnav2 #myLinks2 {
+        display: none;
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+    .topnav3 {
+        margin-top: 2em;
+        overflow: hidden;
+        background-color: #5681FF;
+        position: relative;
+        color: white;
+        width: 1050px;
+        margin-left: 0.3em;
+    }
+    .topnav3 #myLinks3 {
+        display: none;
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+    aside {
+        background-color: white;
+        width: 350px;
+        height: 450px;
+        margin-top: 4em;
+        margin-left: 2.5em;
+    }
+    .info+button {
+        background-color: #5681FF;
+        width: 150px;
+        margin-left: 7.5em;
+        margin-top: 1em;
+        padding: 1.5em;
+        border: none;
+        color: white;
+        cursor: pointer;
+        font-weight: 700;
+    }
+    .navFooter {
+        list-style-type: none;
+        text-align: center;
+        margin-left: 10em;
+    }
+}
+
+@media (max-width:1400px) {
+    main {
+        background-color: #5681FF;
+    }
+    .topnav {
+        margin-top: 2em;
+        overflow: hidden;
+        background-color: #5681FF;
+        position: relative;
+        color: white;
+        width: 850px;
+        margin-left: -3em;
+    }
+    .topnav #myLinks {
+        display: none;
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+    .topnav2 {
+        margin-top: 2em;
+        overflow: hidden;
+        background-color: #5681FF;
+        position: relative;
+        color: white;
+        width: 850px;
+        margin-left: -3em;
+    }
+    .topnav2 #myLinks2 {
+        display: none;
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+    .topnav3 {
+        margin-top: 2em;
+        overflow: hidden;
+        background-color: #5681FF;
+        position: relative;
+        color: white;
+        width: 850px;
+        margin-left: -3em;
+    }
+    .topnav3 #myLinks3 {
+        display: none;
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+    aside {
+        background-color: white;
+        width: 300px;
+        height: 450px;
+        margin-top: 5em;
+        margin-left: 2.5em;
+    }
+    aside>h1 {
+        font-size: 1.4em;
+    }
+    .info+button {
+        margin-top: 1.5em;
+        padding: 1.5em;
+    }
+    .navFooter {
+        list-style-type: none;
+        text-align: center;
+        margin-left: 10em;
+    }
+}
+
+@media (max-width:1200px) {
+    main {
+        background-color: #5681FF;
+    }
+    .topnav {
+        margin-top: 2em;
+        overflow: hidden;
+        background-color: #5681FF;
+        position: relative;
+        color: white;
+        width: 650px;
+        margin-left: -3em;
+    }
+    .topnav #myLinks {
+        display: none;
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+    .topnav2 {
+        margin-top: 2em;
+        overflow: hidden;
+        background-color: #5681FF;
+        position: relative;
+        color: white;
+        width: 650px;
+        margin-left: -3em;
+    }
+    .topnav2 #myLinks2 {
+        display: none;
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+    .topnav3 {
+        margin-top: 2em;
+        overflow: hidden;
+        background-color: #5681FF;
+        position: relative;
+        color: white;
+        width: 650px;
+        margin-left: -3em;
+    }
+    .topnav3 #myLinks3 {
+        display: none;
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+    aside {
+        background-color: white;
+        width: 300px;
+        height: 450px;
+        margin-top: 5em;
+        margin-left: 2em;
+    }
+    .navFooter {
+        list-style-type: none;
+        text-align: center;
+        margin-left: 10em;
+    }
+}
+
+@media (max-width:970px) {
+    main {
+        background-color: #5681FF;
+    }
+    .topnav {
+        margin-top: 2em;
+        overflow: hidden;
+        background-color: #5681FF;
+        position: relative;
+        color: white;
+        width: 500px;
+        margin-left: -3em;
+    }
+    .topnav #myLinks {
+        display: none;
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+    .topnav2 {
+        margin-top: 2em;
+        overflow: hidden;
+        background-color: #5681FF;
+        position: relative;
+        color: white;
+        width: 500px;
+        margin-left: -3em;
+    }
+    .topnav2 #myLinks2 {
+        display: none;
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+    .topnav3 {
+        margin-top: 2em;
+        overflow: hidden;
+        background-color: #5681FF;
+        position: relative;
+        color: white;
+        width: 500px;
+        margin-left: -3em;
+    }
+    .topnav3 #myLinks3 {
+        display: none;
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+    aside {
+        background-color: white;
+        width: 300px;
+        height: 450px;
+        margin-left: 1em;
+        margin-top: 5em;
+    }
+    .navFooter {
+        list-style-type: none;
+        text-align: center;
+        margin-left: 10em;
+    }
+}
+
+@media (max-width:850px) {
+    main {
+        background-color: #5681FF;
+    }
+    .topnav {
+        margin-top: 2em;
+        overflow: hidden;
+        background-color: #5681FF;
+        position: relative;
+        color: white;
+        width: 300px;
+        margin-left: -3em;
+    }
+    .topnav #myLinks {
+        display: none;
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+    .topnav2 {
+        margin-top: 2em;
+        overflow: hidden;
+        background-color: #5681FF;
+        position: relative;
+        color: white;
+        width: 300px;
+        margin-left: -3em;
+    }
+    .topnav2 #myLinks2 {
+        display: none;
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+    .topnav3 {
+        margin-top: 2em;
+        overflow: hidden;
+        background-color: #5681FF;
+        position: relative;
+        color: white;
+        width: 300px;
+        margin-left: -3em;
+    }
+    .topnav3 #myLinks3 {
+        display: none;
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+    aside {
+        background-color: white;
+        width: 300px;
+        height: 450px;
+        margin-top: 5em;
+        margin-left: 2em;
+    }
+    .navFooter {
+        list-style-type: none;
+        text-align: center;
+        margin-left: 10em;
+    }
+}
+
+@media (max-width:650px) {
+    main {
+        background-color: #5681FF;
+    }
+    .topnav {
+        margin-top: 2em;
+        overflow: hidden;
+        background-color: #5681FF;
+        position: relative;
+        color: white;
+        width: 250px;
+        margin-left: -3em;
+    }
+    .topnav #myLinks {
+        display: none;
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+    .topnav2 {
+        margin-top: 2em;
+        overflow: hidden;
+        background-color: #5681FF;
+        position: relative;
+        color: white;
+        width: 250px;
+        margin-left: -3em;
+    }
+    .topnav2 #myLinks2 {
+        display: none;
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+    .topnav3 {
+        margin-top: 2em;
+        overflow: hidden;
+        background-color: #5681FF;
+        position: relative;
+        color: white;
+        width: 250px;
+        margin-left: -3em;
+    }
+    .topnav3 #myLinks3 {
+        display: none;
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+    aside {
+        background-color: white;
+        width: 300px;
+        height: 450px;
+        margin-top: 5em;
+        margin-left: 2em;
+    }
+    .navFooter {
+        list-style-type: none;
+        text-align: center;
+        margin-left: 10em;
+    }
+}
+
+@media (max-width:590px) {
+    main {
+        background-color: #5681FF;
+    }
+    .topnav {
+        margin-top: 2em;
+        overflow: hidden;
+        background-color: #5681FF;
+        position: relative;
+        color: white;
+        width: 200px;
+    }
+    .active>h2 {
+        font-size: 1.3em;
+    }
+    .topnav #myLinks {
+        display: none;
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+    .topnav2 {
+        margin-top: 1em;
+        overflow: hidden;
+        background-color: #5681FF;
+        position: relative;
+        color: white;
+        width: 200px;
+    }
+    .active2>h2 {
+        font-size: 1.3em;
+    }
+    .topnav2 #myLinks2 {
+        display: none;
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+    .topnav3 {
+        margin-top: 1em;
+        overflow: hidden;
+        background-color: #5681FF;
+        position: relative;
+        color: white;
+        width: 200px;
+    }
+    .topnav3 #myLinks3 {
+        display: none;
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+    .active3>h2 {
+        font-size: 1.32em;
+    }
+    .info+button {
+        margin-left: 5.4em;
+    }
+    aside {
+        background-color: white;
+        width: 300px;
+        height: 450px;
+        margin-left: em;
+        margin-top: 5em;
+    }
+    .navFooter {
+        list-style-type: none;
+        text-align: center;
+        margin-left: 10em;
+    }
+}
+
+@media (max-width:550px) {
+    h1 {
+        font-size: 2.4em;
+    }
+    #boxContainer {
+        margin-top: 1.5em;
+        border: 1px solid #5681FF;
+        padding: 2px;
+        height: 30px;
+    }
+    main {
+        background-color: #5681FF;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+    h1 {
+        margin-left: 2em;
+        margin-top: 0em;
+        padding: 0;
+    }
+    .topnav {
+        margin-top: -2em;
+        overflow: hidden;
+        background-color: #5681FF;
+        position: relative;
+        color: white;
+        width: 300px;
+        margin-left: 2em;
+    }
+    .topnav a {
+        color: white;
+        padding: 20px 18px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+        margin-bottom: 0.8em;
+    }
+    .topnav a.icon {
+        background: #5681FF;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 2px;
+        margin-top: 0.03em;
+    }
+    .topnav #myLinks {
+        display: none;
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+    .active>h2 {
+        font-size: 1.05em;
+    }
+    .topnav2 {
+        margin-top: -1em;
+        overflow: hidden;
+        background-color: #5681FF;
+        position: relative;
+        color: white;
+        width: 300px;
+        margin-left: 2em;
+    }
+    .topnav2 #myLinks2 {
+        display: none;
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+    .topnav2 a {
+        color: white;
+        padding: 20px 18px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+        margin-bottom: 0.5em;
+    }
+    .active2>h2 {
+        font-size: 1.05em;
+    }
+    .topnav3 {
+        margin-top: -1em;
+        overflow: hidden;
+        background-color: #5681FF;
+        position: relative;
+        color: white;
+        width: 300px;
+        margin-left: 2em;
+    }
+    .topnav3 #myLinks3 {
+        display: none;
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+    .active3>h2 {
+        font-size: 1em;
+    }
+    aside {
+        background-color: white;
+        width: 300px;
+        height: 400px;
+        margin-left: 5em;
+        margin-top: 0em;
+    }
+    aside>h1 {
+        font-size: 1.5em;
+    }
+    .info+button {
+        background-color: #5681FF;
+        width: 150px;
+        margin-left: 5.3em;
+        margin-top: 1em;
+        padding: 1.7em;
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
+    .navFooter {
+        list-style-type: none;
+        text-align: center;
+        margin-left: -1em;
+        margin-top: 1em;
+    }
+}

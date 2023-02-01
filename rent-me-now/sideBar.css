@@ -1,0 +1,79 @@
+#linecontainer{
+    position: absolute;
+    width: 3%;
+    height: 6%;
+    right: 3%;
+    top: 3%;
+    cursor: pointer;
+    }
+  
+    #firstline{
+      position: relative;
+      width: 80%;
+      height: 0px;
+      left: 0%;
+      top: 20%;
+      border-top: 3px solid #FFFFFF;
+      cursor: pointer;
+    }
+  
+    #secondline{
+      position: relative;
+      width: 50%;
+      height: 0px;
+      left: 0%;
+      top: 40%;
+      border-top: 3px solid #FFFFFF;
+      cursor: pointer;
+    }
+  
+    #thirdline{
+      position: relative;
+      width: 80%;
+      height: 0px;
+      left: 0%;
+      top: 60%;
+      border-top: 3px solid #FFFFFF;
+      cursor: pointer;
+      
+    }
+  
+    #nav-sidebar{
+      position: absolute;
+      right: -6%;
+      bottom: 0;
+      width: 0px;
+      height: calc(80vh);
+      background-color: #FFFFFF;
+      z-index: 1000;
+      visibility: hidden;
+      transition: all 0.3s ease-in-out;
+    }
+  
+    #nav-sidebar ul{
+      padding-top: 60px;
+      overflow: hidden;
+      visibility: hidden;
+    }
+  
+    #nav-sidebar ul li{
+      line-height: 60px;
+      list-style: none;
+    }
+  
+    #nav-sidebar ul li span, #nav-sidebar ul li a{
+      display: block;
+      height: 60px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #000000;
+      font-family: Roboto;
+      font-size: 30px;
+      white-space: nowrap;
+      opacity: 0;
+      transition: all 0.3s ease-in-out;
+    }
+  
+    #nav-sidebar ul li a:hover{
+      text-decoration: underline #5681FF;
+    }

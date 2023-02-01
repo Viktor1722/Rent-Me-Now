@@ -1,0 +1,281 @@
+*{
+    
+    margin:0;
+}
+
+#logoHeader{
+    height: 100px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    
+}
+
+#boxContainer{
+    margin-top: 1.5em;
+    border: 1px solid #4169E1;
+    padding: 5px;
+    height: 30px;
+}
+
+td > input[type="text"]{
+    border: none;
+    color: black;
+}
+
+main{
+    height: 730px;
+    background-color: white;
+    border-bottom: 1px #4169E1 solid;
+    border-top: 1px #4169E1 solid;
+}
+
+section{
+  display: flex;
+    flex-direction: row;
+}
+
+.Search:focus{
+    outline:none;
+}
+
+h1{
+    color:#4169E1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    margin-left: 1em;
+    padding-top: 1em;
+    font-size: 2em;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+    color: black;
+    width: 800px;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+    margin-left:1em;
+    margin-top: 1em;
+  }
+  
+  .topnav a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    background:white;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 2px;
+    margin-top: 0.35em;
+  }
+
+  
+  .active {
+    background-color: white;
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+    display: block;
+    padding-top: 20px;
+  }
+  
+  .container{
+      margin-top: 5em;
+      margin-left: 2em;
+
+  }
+
+  .topnav2 {
+    margin-top: 2em;
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+    color: black;
+    width: 800px;
+  }
+  
+  .topnav2 #myLinks2 {
+    display: none;
+    margin-left:1em;
+    margin-top: 1em;
+  }
+  
+  .topnav2 a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav2 a.icon {
+    background: white;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 2px;
+    margin-top: 0.35em;
+  }
+
+  
+  .active2 {
+    background-color: white;
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+    display: block;
+    padding-top: 20px;
+  }
+
+  .topnav3 {
+    margin-top: 2em;
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+    color: black;
+    width: 800px;
+  }
+  
+  .topnav3 #myLinks3 {
+    display: none;
+    margin-left:1em;
+    margin-top: 1em;
+  }
+  
+  .topnav3 a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav3 a.icon {
+    background: white;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 2px;
+    margin-top: 0.35em;
+  }
+
+  
+  .active3 {
+    background-color: white;
+    color: black;
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+    display: block;
+    padding-top: 20px;
+  }
+
+  aside{
+    background-color: #4169E1;
+    width: 300px;
+    height:450px;
+    margin-left: 25em;
+    margin-top: 5em;
+}
+
+aside >  h1 {
+  color: #4169E1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.7em;
+}
+
+
+.info{
+  margin-top: 1em;
+  margin-left: 3em;
+}
+
+.info > input[type="text"]{
+  border: 1px solid #4169E1;
+  padding: 1em;
+  margin-top: 1em;
+}
+
+input[type="email"]{
+  border: 1px solid #4169E1;
+  padding: 1em;
+  margin-top: 1em;
+}
+
+input[type="phone"]{
+  border: 1px solid #4169E1;
+  padding: 1em;
+  margin-top: 1em;
+}
+
+.info + button{
+  background-color: #4169E1;
+  width: 150px;
+  margin-left: 6em;
+  margin-top: 6em;
+  padding: 1.7em;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+  #logoFooter{
+    height: 100px;
+    margin-top: 2em;
+  }
+
+  footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+  }
+
+ .navList > li {
+   color: black;
+   text-decoration: none;
+   
+ }
+
+ .navList > li,a {
+  color: black;
+  text-decoration: none;
+}
+
+ .navFooter{
+   list-style-type: none;
+   text-align: center;
+    margin-left: 25em;
+ }
+
+ .navFooter li {
+   display: inline-block;
+   padding: 0px 20px;
+   font-size: 1.2em;
+ }
+
+ .navFooter li a{
+  transition: all 0.3s ease 0s;
+}
+
+.navFooter li a:hover{
+  color: #4169E1;
+}

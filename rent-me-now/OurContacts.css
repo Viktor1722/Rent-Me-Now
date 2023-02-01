@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap');
+
+* {
+    margin: 0;
+  }
+  
+  #logoHeader {
+    height: 100px;
+  }
+  
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #linecontainer{
+    position: absolute;
+    width: 3%;
+    height: 6%;
+    right: 2%;
+    top: 3%;
+    cursor: pointer;
+    }
+  
+    #firstline{
+      position: relative;
+      width: 70%;
+      height: 0px;
+      left: 0%;
+      top: 20%;
+      border-top: 2px solid #000000;
+      cursor: pointer;
+    }
+  
+    #secondline{
+      position: relative;
+      width: 40%;
+      height: 0px;
+      left: 0%;
+      top: 40%;
+      border-top: 2px solid #000000;
+      cursor: pointer;
+    }
+  
+    #thirdline{
+      position: relative;
+      width: 70%;
+      height: 0px;
+      left: 0%;
+      top: 60%;
+      border-top: 2px solid #000000;
+      cursor: pointer;
+      
+    }
+
+    #nav-sidebar{
+      position: absolute;
+      right: -6%;
+      bottom: 0;
+      width: 0px;
+      height: calc(85vh);
+      background-color: #FFFFFF;
+      z-index: 1000;
+      visibility: hidden;
+      transition: all 0.3s ease-in-out;
+    }
+    
+    #nav-sidebar ul{
+      padding-top: 60px;
+      overflow: hidden;
+      visibility: hidden;
+    }
+    
+    #nav-sidebar ul li{
+      line-height: 60px;
+      list-style: none;
+    }
+    
+    #nav-sidebar ul li span, #nav-sidebar ul li a{
+      display: block;
+      height: 60px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #000000;
+      font-family: Roboto;
+      font-size: 30px;
+      font-weight: bold;
+      white-space: nowrap;
+      opacity: 0;
+      transition: all 0.3s ease-in-out;
+    }
+    
+    #nav-sidebar ul li a:hover{
+      text-decoration: underline #5681FF;
+    }
+  #menu {
+    position: absolute;
+    width: 28px;
+    height: 9px;
+    left: 91%;
+    top: 4.5%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    color: #5681ff;
+  }
+  #boxContainer {
+    margin-top: 2rem;
+    border: 1px solid #5681ff;
+    padding: 5px;
+    height: 30px;
+    margin-right: 13rem;
+  }
+  #map_description {
+    position: absolute;
+    width: 400px;
+    left: 65%;
+    top: 10rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 14px;
+    color: #ffffff;
+  }
+  td > input[type="text"] {
+    border: none;
+    color: black;
+  }
+  
+  main {
+    height: 730px;
+    background-color: #5681ff;
+  }
+  
+  section {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .Search:focus {
+    outline: none;
+  }
+  
+  h1 {
+    position: relative;
+    left: -10%;
+    color: white;
+    font-family: "Roboto";
+    margin-left: 15rem;
+    padding-top: 5rem;
+    font-size: 2.7rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.2rem solid rgb(255, 255, 255);
+  }
+  .firstParagraph {
+    color: white;
+    font-family: "Roboto";
+    position: absolute;
+    margin-top: 16rem;
+    margin-left: 10rem;
+  }
+  .locationPNG {
+    position: absolute;
+    left: -2%;
+    margin-top: 15.5rem;
+    width: 2rem;
+    margin-left: 7.5rem;
+  }
+  .secondParagraph {
+    color: white;
+    font-family: "Roboto";
+    position: absolute;
+    margin-top: 20rem;
+    margin-left: 10rem;
+  }
+  .clockPNG {
+    position: absolute;
+    left: -2%;
+    margin-top: 19rem;
+    width: 3rem;
+    margin-left: 7rem;
+  }
+  .thirdParagraph {
+    color: white;
+    font-family: "Roboto";
+    position: absolute;
+    margin-top: 24rem;
+    margin-left: 10rem;
+  }
+  .phonePNG {
+    position: absolute;
+    left: -2%;
+    margin-top: 23rem;
+    width: 3rem;
+    margin-left: 7rem;
+  }
+  .fourthParagraph {
+    color: white;
+    font-family: "Roboto";
+    position: absolute;
+    margin-top: 28rem;
+    margin-left: 10rem;
+  }
+  .emailPNG {
+    position: absolute;
+    left: -2%;
+    margin-top: 27rem;
+    width: 3rem;
+    margin-left: 7rem;
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+  }
+  .button {
+    position: absolute;
+    top: 85%;
+    left: 5.5%;
+    width: 10%;
+    height: 7%;
+    color: #5681ff;
+    font-weight: bold;
+    border: none;
+    transition: 0.5s;
+  }
+
+  .button:hover{
+    border-radius: 50%;
+  }
+  
+  #logoFooter {
+    height: 100px;
+    margin-top: 2em;
+  }
+  
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .navList > li {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .navList > li,
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .navFooter {
+    list-style-type: none;
+    text-align: center;
+    margin-left: 25em;
+  }
+  
+  .navFooter li {
+    display: inline-block;
+    padding: 0px 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .navFooter li a {
+    transition: all 0.3s ease 0s;
+  }
+  
+  .navFooter li a:hover {
+    color: #4169e1;
+  }
+  .mapouter {
+    position: absolute;
+    right: 3%;
+    height: 500px;
+    width: 600px;
+    margin-left: 72rem;
+    margin-top: 7rem;
+    border: 0.5rem solid rgb(255, 255, 255);
+    border-radius: 0.2rem;
+  }
+  .gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 500px;
+    width: 600px;
+  }
+
+  #home{
+    position: absolute;
+    bottom: -21%;
+    left: 55.35%;
+  }
+
+  #vehicles{
+    position: absolute;
+    bottom: -27%;
+    left: 55.3%;
+  }
+
+  #services{
+    position: absolute;
+    bottom: -34%;
+    left: 55.3%;
+  }
+
+  #insurance{
+    position: absolute;
+    bottom: -21%;
+    left: 76%;
+  }
+  
+  #contact_us{
+    position: absolute;
+    bottom: -27%;
+    left: 75.9%;
+  }
+
+  #Blog_Tips{
+    position: absolute;
+    bottom: -34%;
+    left: 76%;
+  }

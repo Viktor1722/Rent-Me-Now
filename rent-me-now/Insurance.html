@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="InsuranceCSS.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <title>Insurance</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="logo.png" alt="logo" id="logoHeader"></a>
+        <div id="boxContainer">
+            <table>
+                <tr>
+                    <td>
+                        <a href="#"><img src="https://img.icons8.com/material-two-tone/24/000000/search.png" /></a>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Search what you need" class="
+                        Search">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <span id="menu" onclick="toggleNav()">Menu</span>
+        <div id="linecontainer" onclick="toggleNav()">
+            <div id="firstline"></div>
+            <div id="secondline"></div>
+            <div id="thirdline"></div>
+        </div>
+    </header>
+
+    <main>
+        <h1> <b>OUR INSURANCE</b></h1>
+        <section>
+            <div class="container">
+                <div class="topnav">
+                    <a href="#home" class="active">
+                        <h2>What is Car Insurance?</h2>
+                    </a>
+                    <div id="myLinks">
+                        <p>Car insurance could cover costs if your car is damaged in an accident,stolen or catches fire.
+                            You're legally required to have it if you drive or keep your car on a public road.The
+                            minimum level of car insurance by law is third
+                            party insurance - this could cover you if you injure someone else or damage their car, but
+                            your level of cover and exacly what you're covered for depends on the policy you chose.
+                        </p>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+
+
+                <div class="topnav2">
+                    <a href="#home" class="active2">
+                        <h2>What does Rent Me Now Insurance Cover?</h2>
+                    </a>
+                    <div id="myLinks2">
+                        <p>
+                            Third Party Liability cover <br> Damage Protection <br> Loss Damage Waiver (including theft
+                            protecion)
+                            <br> Breakdown cover <br>
+                        </p>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction2()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+
+                <div class="topnav3">
+                    <a href="#home" class="active3">
+                        <h2>What types of Insurance do we offer?</h2>
+                    </a>
+                    <div id="myLinks3">
+                        <p>
+                            Regular - Covers around 60% of vehicle's damage <br> Premium - Covers around 80% of
+                            vehicle's damage(Can be used only if you rented a car for more than 3 days) <br>
+                        </p>
+
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction3()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+
+            <aside>
+                <h1><b>DO YOU HAVE ANY QUESTIONS ABOUT INSURANCE?</b></h1>
+                <form name="contact-form" action="">
+                    <div class="info">
+                        <input type="text" name="FullName" placeholder="Full Name">
+                        <div class="error hide">Write your Full Name!</div>
+                        <input type="email" name="email" placeholder="E-mail">
+                        <div class="error hide">Email is invalid!</div>
+                        <input type="Phone" name="phone" placeholder="Phone">
+                        <div class="error hide">Write your Phone Number!</div>
+                    </div>
+                    <button type="submit">Contact Us</button>
+
+                </form>
+                <h3 class="SentMessage hide"> We will get in touch with you as soon as possible! </h3>
+            </aside>
+
+        </section>
+
+        <div id="nav-sidebar">
+            <ul>
+                <li><span>MENU</span></li>
+                <li><a href="index.html">Home </a></li>
+                <li><a href="cars.html">Vehicles</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Insurance.html">Insurance</a></li>
+                <li><a href="OurContacs.html">Contact Us</a></li>
+                <li><a href="BlogPage.html">Blog/Tips</a></li>
+            </ul>
+        </div>
+
+        <script src="main.js"></script>
+        <script src="InsuranceJS.js"></script>
+    </main>
+
+    <footer>
+        <img src="logo.png" alt="" id="logoFooter">
+        <nav class="navFooter">
+            <ul class="navList">
+                <li id="home"><a href="index.html">Home </a></li>
+                <li id="vehicles"><a href="cars.html">Vehicles</a></li>
+                <li id="services"><a href="Services.html">Services</a></li>
+                <li id="insurance"><a href="Insurance.html">Insurance</a></li>
+                <li id="contact_us"><a href="OurContacs.html">Contact Us</a></li>
+                <li id="Blog_Tips"><a href="BlogPage.html">Blog/Tips</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+
+</html>

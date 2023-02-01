@@ -1,0 +1,1375 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap');
+*{
+    
+    margin:0;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.bg {
+  /* The image used */
+  background: linear-gradient(rgba(0, 0, 0, 0.44), rgba(0, 0, 0, 0.27)), url("Car_Home.jpeg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/*HEADER*/
+
+#logoHeader {
+    position: absolute;
+    bottom: 80%;
+    height: 160px;
+    width: 12%;
+    left:1.5%;
+  }
+  
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*background-color: white;*/
+  }
+  
+  #boxContainer {
+    position: absolute;
+    right: 8%;
+    top: 0%;
+    margin-top: 1.5em;
+    border: 1px solid #4169E1;
+    padding: 5px;
+    height: 30px;
+  }
+
+  .Search{
+    background: transparent;
+    border: none;
+  }
+
+  #Search{
+    width: 25px;
+  }
+
+  ::placeholder{
+    font-family: Roboto;
+    font-weight: bold;
+    color: #FFFFFF;
+  }
+
+  input{
+    color: #FFFFFF;
+  }
+
+  #linecontainer{
+  position: absolute;
+  width: 3%;
+  height: 6%;
+  right: 3%;
+  top: 3%;
+  cursor: pointer;
+  }
+
+  #firstline{
+    position: relative;
+    width: 80%;
+    height: 0px;
+    left: 0%;
+    top: 20%;
+    border-top: 3px solid #FFFFFF;
+    cursor: pointer;
+  }
+
+  #secondline{
+    position: relative;
+    width: 50%;
+    height: 0px;
+    left: 0%;
+    top: 40%;
+    border-top: 3px solid #FFFFFF;
+    cursor: pointer;
+  }
+
+  #thirdline{
+    position: relative;
+    width: 80%;
+    height: 0px;
+    left: 0%;
+    top: 60%;
+    border-top: 3px solid #FFFFFF;
+    cursor: pointer;
+    
+  }
+
+  #nav-sidebar{
+    position: absolute;
+    right: -6%;
+    bottom: 0;
+    width: 0px;
+    height: calc(80vh);
+    background-color: #FFFFFF;
+    z-index: 1000;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+
+  #nav-sidebar ul{
+    padding-top: 60px;
+    overflow: hidden;
+    visibility: hidden;
+  }
+
+  #nav-sidebar ul li{
+    line-height: 60px;
+    list-style: none;
+  }
+
+  #nav-sidebar ul li span, #nav-sidebar ul li a{
+    display: block;
+    height: 60px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    font-family: Roboto;
+    font-size: 30px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  #nav-sidebar ul li a:hover{
+    text-decoration: underline #5681FF;
+  }
+  /*HEADER*/
+
+/*body {
+    background: linear-gradient(rgba(0, 0, 0, 0.44), rgba(0, 0, 0, 0)), url("Car_Home.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }*/
+
+  header + div{
+    /*top: 60px;
+    padding: 60px;*/
+    /*position: relative;
+    height: 200px;
+    width: 200px;
+    top: 90px;
+    border: 3px solid blue;*/
+  
+  position: absolute;
+  width: 96%;
+  height: 519px;
+  left: 27px;
+  top: 114px;
+  
+  border: 1px solid #5681FF;
+  box-sizing: border-box;
+  }
+
+  #blue_line{
+    position: absolute;
+    width: 6.3%;
+    height: 0px;
+    left: 6%;
+    top: 12.5%;
+    border-top: 3px solid #5681FF;
+  }
+
+  #Ukraine{
+  position: absolute;
+  width: 82px;
+  height: 8px;
+  left: 6%;
+  top: 15%;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 16px;
+  line-height: 11px;
+  display: flex;
+  align-items: center;
+
+  color: #FFFFFF;
+  }
+
+  #Carpathians{
+  position: absolute;
+  width: 82px;
+  height: 8px;
+  left: 12.3%;
+  top: 15%;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 11px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+  }
+  
+  #do_you_need_a_car{
+  position: absolute;
+  width: 284px;
+  height: 161px;
+  left: 82px;
+  top: 160px;
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 56px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  
+  color: #FFFFFF;
+  }
+
+  div  button{
+position: absolute;
+width: 174px;
+ height: 58px;
+left: 84px;
+top: 78%;
+color: #FFFFFF;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 13px;
+border: none;
+transition: 0.5s;
+cursor: pointer;
+
+background: #5681FF;
+}
+
+div button:hover{
+  border-radius: 50%;
+}
+
+#left_arrow{
+position: relative;
+top: 74%;
+left: 80%;
+width: 4.7%;
+}
+
+#right_arrow{
+position: relative;
+top: 74.8%;
+left: 81.5%;
+width: 4.6%;
+}
+
+#How_to_choose_the_right_car_for_rent{
+  position: absolute;
+  width: 27%;
+  height: 550px;
+  left: 7%;
+  top: 97%;
+  background-color: #5681FF;
+  
+  border: 1px solid #5681FF;
+  
+}
+
+#black_line{
+  position: relative;
+  width: 24%;
+  height: 0px;
+  left: 18%;
+  top: 10.5%;
+  border-top: 3px solid #001249;
+}
+
+#black_line + p{
+  position: relative;
+  top: 12%;
+  left: 18%;
+  font-family: Roboto;
+  color: #FFFFFF;
+}
+
+#black_line + p + p{
+  position: relative;
+  width: 60%;
+  top: 24%;
+  left: 18%;
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+#black_line + p + p + p{
+  position: relative;
+  width: 60%;
+  top: 30%;
+  left: 18%;
+  font-family: Roboto;
+  font-size: 12.5px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+#More_tips{
+  position: relative;
+  width: 27%;
+  height: 7%;
+  top: 40%;
+  left: 18%;
+  font-family: Roboto;
+  font-size: 12.5px;
+  font-weight: bold;
+  color: #5681FF;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+
+#How_to_choose_the_right_car_for_rent2{
+  position: absolute;
+  width: 27%;
+  height: 550px;
+  left: 37%;
+  top: 100%;
+  background-color: #FFFFFF;
+  
+  border: 1px solid #FFFFFF;
+}
+
+#black_line2{
+  position: relative;
+  width: 24%;
+  height: 0px;
+  left: 18%;
+  top: 10.5%;
+  border-top: 3px solid #001249;
+}
+
+#black_line2 + p{
+  position: relative;
+  top: 12%;
+  left: 18%;
+  font-family: Roboto;
+  color: #000000;
+}
+
+#black_line2 + p + p{
+  position: relative;
+  width: 60%;
+  top: 24%;
+  left: 18%;
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: bold;
+  color: #000000;
+}
+
+#black_line2 + p + p + p{
+  position: relative;
+  width: 60%;
+  top: 30%;
+  left: 18%;
+  font-family: Roboto;
+  font-size: 12.5px;
+  font-weight: bold;
+  color: #000000;
+}
+
+#How_to_choose_the_right_car_for_rent3{
+  position: absolute;
+  width: 27%;
+  height: 550px;
+  left: 67%;
+  top: 100%;
+  background-color: #FFFFFF;
+  
+  border: 1px solid #FFFFFF;
+}
+
+#black_line3{
+  position: relative;
+  width: 24%;
+  height: 0px;
+  left: 18%;
+  top: 10.5%;
+  border-top: 3px solid #001249;
+}
+
+#black_line3 + p{
+  position: relative;
+  top: 12%;
+  left: 18%;
+  font-family: Roboto;
+  color: #000000;
+}
+
+#black_line3 + p + p{
+  position: relative;
+  width: 60%;
+  top: 24%;
+  left: 18%;
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: bold;
+  color: #000000;
+}
+
+#black_line3 + p + p + p{
+  position: relative;
+  width: 60%;
+  top: 30%;
+  left: 18%;
+  font-family: Roboto;
+  font-size: 12.5px;
+  font-weight: bold;
+  color: #000000;
+}
+
+#cars{
+  position: absolute;
+  top: 180%;
+  width: 100%;
+  height: 95%;
+  display: flex;
+  flex-direction: row;
+  background-color: #5681FF;
+}
+
+#first_paragraph{
+  position: absolute;
+  height: 56px;
+  left: 83px;
+  top: 10%;
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 56px;
+  text-transform: uppercase;
+  
+  color: #FFFFFF;
+}
+
+#Honda{
+  position: absolute;
+  width: 27%;
+  height: 500px;
+  left: 5.7%;
+  bottom: 10%;
+  
+  border: 1px solid #FFFFFF;
+  background-color: #FFFFFF;
+}
+
+#line1{
+  position: relative;
+  width: 24%;
+  height: 0px;
+  left: 18%;
+  top: 10%;
+  border-top: 3px solid #001249;
+}
+
+#type_sedan{
+  position: relative;
+  top: 12%;
+  left: 18%;
+  font-family: Roboto;
+  color: #000000;
+}
+
+#honda_civic{
+position: relative;
+top: 18%;
+left: 18%;
+font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 24px;
+line-height: 28px;
+text-transform: uppercase;
+}
+
+#honda_civic + img{
+  position: relative;
+  top: 18%;
+  left: 14.5%;
+}
+
+#car_icons{
+  position: relative;
+  top: 90px;
+  height: 120px;
+}
+
+#engine{
+  position: relative;
+  top: 5px;
+  left: 16%;
+}
+
+#engine + span{
+  position: relative;
+  top: -3%;
+  left: 18%;
+  margin: 0%;
+  padding: 0%;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#top_speed{
+  position: relative;
+  top: 30px;
+  left: -19%;
+}
+
+#top_speed + span{
+  position: relative;
+  top: 23%;
+  left: -15%;
+  margin: 0%;
+  padding: 0%;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#gearbox{
+  position: relative;
+  top: 60px;
+  left: -39%;
+}
+
+#gearbox + span{
+  position: relative;
+  top: 47%;
+  left: -37%;
+  margin: 0%;
+  padding: 0%;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#seats{
+  position: relative;
+  top: 5px;
+  left: -18.5%;
+}
+
+#seats + span{
+  position: relative;
+  top: -3%;
+  left: -18%;
+  margin: 0%;
+  padding: 0%;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#age_limit{
+  position: relative;
+  top: 10%;
+  left: 62%;
+}
+
+#age_limit + span{
+  position: relative;
+  top: 6%;
+  left: 63%;
+  margin: 0%;
+  padding: 0%;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#car_icons + button{
+  position: relative;
+  top: 21%;
+  left: 15%;
+  width: 30%;
+  height: 9%;
+}
+
+#HondaD{
+  position: relative;
+  top: 21%;
+  left: 15%;
+  width: 30%;
+  height: 9%;
+  background-color: #FFFFFF;
+  color: #0F0F0F;
+  border: 3px solid #5681FF;
+}
+
+#Audi{
+  position: absolute;
+  width: 27%;
+  height: 500px;
+  left: 37.7%;
+  bottom: 10%;
+  
+  border: 1px solid #FFFFFF;
+  background-color: #FFFFFF;
+}
+
+#audi_sq8 + img{
+  position: relative;
+  top: 18%;
+  left: 14.5%;
+}
+
+#car_icons2{
+  position: relative;
+  top: 110px;
+  height: 120px;
+}
+
+#car_icons2 + button{
+  position: relative;
+  top: 26%;
+  left: 15%;
+  width: 30%;
+  height: 9%;
+}
+
+#AudiD{
+  position: relative;
+  top: 26%;
+  left: 15%;
+  width: 30%;
+  height: 9%;
+  background-color: #FFFFFF;
+  color: #0F0F0F;
+  border: 3px solid #5681FF;
+}
+
+#line2{
+  position: relative;
+  width: 24%;
+  height: 0px;
+  left: 18%;
+  top: 10%;
+  border-top: 3px solid #001249;
+}
+
+#type_suv{
+  position: relative;
+  top: 12%;
+  left: 18%;
+  font-family: Roboto;
+  color: #000000;
+}
+
+#audi_sq8{
+  position: relative;
+  top: 18%;
+  left: 18%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  }
+
+  #Mercedes{
+    position: absolute;
+    width: 27%;
+    height: 500px;
+    left: 69.7%;
+    bottom: 10%;
+    
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+  }
+
+  #mercedes_benz_v + img{
+    position: relative;
+    top: 10%;
+    left: 11%;
+  }
+
+  #top_speed2{
+    position: relative;
+    top: 30px;
+    left: -0.5%;
+  }
+
+  #top_speed2 + span{
+    position: relative;
+    top: 23%;
+    left: 3%;
+    margin: 0%;
+    padding: 0%;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  #gearbox2{
+    position: relative;
+    top: 55%;
+    left: -20.5%;
+  }
+
+  #gearbox2 + span{
+    position: relative;
+    top: 53%;
+    left: -19%;
+    margin: 0%;
+    padding: 0%;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  #seats2{
+    position: relative;
+    top: 5px;
+    left: -7%;
+  }
+
+  #seats2 + span{
+    position: relative;
+    top: -3%;
+    left: -5%;
+    margin: 0%;
+    padding: 0%;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  #age_limit2{
+    position: relative;
+    top: 27%;
+    left: -26%;
+  }
+
+  #age_limit2 + span{
+    position: relative;
+    top: 22%;
+    left: -23%;
+    margin: 0%;
+    padding: 0%;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  #car_icons3{
+    position: relative;
+    top: 5%;
+    height: 120px;
+  }
+
+  #line3{
+    position: relative;
+    width: 24%;
+    height: 0px;
+    left: 18%;
+    top: 10%;
+    border-top: 3px solid #001249;
+  }
+
+  #type_van{
+    position: relative;
+    top: 12%;
+    left: 18%;
+    font-family: Roboto;
+    color: #000000;
+  }
+
+  #mercedes_benz_v{
+    position: relative;
+    top: 18%;
+    left: 18%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    }
+
+    #top_speed3{
+      position: relative;
+      top: 30px;
+      left: -2.5%;
+    }
+
+    #top_speed3 + span{
+      position: relative;
+      top: 23%;
+      left: 1.2%;
+      margin: 0%;
+      padding: 0%;
+      font-family: Roboto;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    #gearbox3{
+      position: relative;
+      top: 55%;
+      left: -22.5%;
+    }
+  
+    #gearbox3 + span{
+      position: relative;
+      top: 53%;
+      left: -20.5%;
+      margin: 0%;
+      padding: 0%;
+      font-family: Roboto;
+      font-size: 12px;
+      font-weight: bold;
+    }
+  
+    #seats3{
+      position: relative;
+      top: 5px;
+      left: -12%;
+    }
+  
+    #seats3 + span{
+      position: relative;
+      top: -3%;
+      left: -12%;
+      margin: 0%;
+      padding: 0%;
+      font-family: Roboto;
+      font-size: 12px;
+      font-weight: bold;
+    }
+  
+    #age_limit3{
+      position: relative;
+      top: 27%;
+      left: -31%;
+    }
+  
+    #age_limit3 + span{
+      position: relative;
+      top: 7%;
+      left: 59%;
+      margin: 0%;
+      padding: 0%;
+      font-family: Roboto;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    #car_icons3 + button{
+      position: relative;
+      top: 10%;
+      left: 15%;
+      width: 30%;
+      height: 9%;
+    }
+    
+    #MercedesD{
+      position: relative;
+      top: 10%;
+      left: 15%;
+      width: 30%;
+      height: 9%;
+      background-color: #FFFFFF;
+      color: #0F0F0F;
+      border: 3px solid #5681FF;
+    }
+
+section {
+  position: absolute;
+  top: 270%;
+  display: flex;
+  flex-direction: row;
+}
+
+.Search:focus {
+  outline: none;
+}
+
+#benefits_description{
+  background-color: #FFFFFF;
+  height: 75%;
+}
+
+.container>h1 {
+  color: #5681FF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  margin-left: 0.5em;
+  margin-bottom: 1em;
+  padding-top: 1em;
+  font-size: 2.5em;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: white;
+  position: relative;
+  color: black;
+  width: 875px;
+  margin-left: 1em;
+}
+
+.topnav #myLinks {
+  display: none;
+  margin-left: 1em;
+  margin-top: 2em;
+}
+
+.topnav a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: white;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 2px;
+  margin-top: 0.5em;
+}
+
+.active {
+  background-color: white;
+  border-top: 1px grey solid;
+  border-bottom: 1px grey solid;
+  display: block;
+  padding-top: 20px;
+}
+
+.active>h2 {
+  font-size: 1.7em;
+}
+
+.container {
+  margin-top: 5em;
+  margin-left: 2em;
+}
+
+.topnav2 {
+  margin-top: 2em;
+  overflow: hidden;
+  background-color: white;
+  position: relative;
+  color: black;
+  width: 875px;
+  margin-left: 1em;
+}
+
+.topnav2 #myLinks2 {
+  display: none;
+  margin-left: 1em;
+  margin-top: 2em;
+}
+
+.topnav2 a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav2 a.icon {
+  background: white;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 2px;
+  margin-top: 0.5em;
+}
+
+.active2 {
+  background-color: white;
+  border-top: 1px grey solid;
+  border-bottom: 1px grey solid;
+  display: block;
+  padding-top: 20px;
+}
+
+.active2>h2 {
+  font-size: 1.7em;
+}
+
+.topnav3 {
+  margin-top: 2em;
+  overflow: hidden;
+  background-color: white;
+  position: relative;
+  color: black;
+  width: 875px;
+  margin-left: 1em;
+}
+
+.topnav3 #myLinks3 {
+  display: none;
+  margin-left: 1em;
+  margin-top: 1.5em;
+}
+
+.topnav3 a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav3 a.icon {
+  background: white;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 2px;
+  margin-top: 0.5em;
+}
+
+.active3 {
+  background-color: white;
+  color: black;
+  border-top: 1px grey solid;
+  border-bottom: 1px grey solid;
+  display: block;
+  padding-top: 20px;
+}
+
+.active3>h2 {
+  font-size: 1.7em;
+}
+
+aside {
+  background-color: #5681FF;
+  width: 450px;
+  height: 430px;
+  margin-left: 3.5em;
+  margin-top: 13em;
+  padding: 2em;
+}
+
+aside>h1 {
+  color: #5681FF;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.7em;
+}
+
+aside>h2 {
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: 'Roboto', sans-serif;
+}
+
+#company_description{
+font-family: Roboto;
+font-weight: bold;
+}
+
+.fact1{
+  font-size: 16px;
+  transition: 0.5s;
+}
+
+.fact1:hover{
+  opacity: 0.6;
+}
+
+#s_our_contacts{
+  position: absolute;
+  top: 370%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #5681FF;
+}
+
+#our_contacts{
+  position: absolute;
+  height: 56px;
+  left: 83px;
+  top: 10%;
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 56px;
+  text-transform: uppercase;
+  
+  color: #FFFFFF;
+  }
+  
+  #our_contacts + img{
+      position: absolute;
+      top: 33%;
+      left: 5%;
+  }
+  
+  #erl{
+  width: 330px;
+  height: 16px;
+  left: 9%;
+  top: 33%;
+  position: absolute;
+  color:#FFFFFF;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  word-spacing: 30px;
+  }
+  
+  #e + img{
+      position: absolute;
+      top: 42%;
+      left: 4.6%;
+  }
+  
+  .AmDeEn{
+    position: absolute;
+    color:#FFFFFF;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+  }
+  
+  #a{
+  
+    left: 8.9%;
+    top: 36%;
+  }
+  
+  #d{
+    left: 16.3%;
+    top: 36%;
+  }
+  
+  #e{
+    left: 24%;
+    top: 36%;
+  }
+  
+  #map{
+  position: relative;
+  left: 57%;
+  top: 50%;
+  }
+  
+  #working_time{
+  position: absolute;
+  width: 153px;
+  height: 16px;
+  left: 9%;
+  top: 44%;
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  
+  color: #FFFFFF;
+  }
+  
+  #working_time + img{
+      position: absolute;
+      top: 50%;
+      left: 4.6%;
+  }
+  
+  #phone_numbers{
+  position: absolute;
+  width: 153px;
+  height: 16px;
+  left: 9%;
+  top: 51.5%;
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  
+  color: #FFFFFF;
+  }
+  
+  #phone_numbers + img{
+      position: absolute;
+      top: 58.5%;
+      left: 4.6%;
+  }
+  
+  #email{
+  position: absolute;
+  width: 272px;
+  height: 16px;
+  left: 9%;
+  top: 59.5%;
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  
+  color: #FFFFFF;
+  }
+
+  #More_information{
+    position: absolute;
+    top: 75%;
+    left: 4.8%;
+    width: 10%;
+    height: 7%;
+    color: #5681FF;
+    font-weight: bold;
+    border: none;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  #More_information:hover{
+    border-radius: 50%;
+  }
+
+  #logoFooter{
+    position: relative;
+    top: -35px;
+    height: 100px;
+    margin-top: 2em;
+  }
+
+  footer{
+    position: absolute;
+    top: 475%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    align-items: center;
+    background-color: #FFFFFF;
+  }
+
+ .navList > li {
+   color: black;
+   text-decoration: none;
+   
+ }
+
+ .navList > li,a {
+  color: black;
+  text-decoration: none;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#home{
+  position: relative;
+  top: -50px;
+  left: 5%;
+}
+
+#vehicles{
+position: relative;
+top: 0px;
+left: -7.7%;
+}
+
+#services{
+position: relative;
+top: 50px;
+left: -25.3%;
+}
+
+#insurance{
+  position: relative;
+  top: -50px;
+  left: -10%;
+}
+
+#contact_us{
+  position: relative;
+  top: 0px;
+  left: -30%;
+}
+
+#Blog_Tips{
+  position: relative;
+  top: 20px;
+  left: 2.5%;
+}
+
+ .navFooter{
+   list-style-type: none;
+   text-align: center;
+    margin-left: 25em;
+ }
+
+ .navFooter li {
+   display: inline-block;
+   padding: 0px 20px;
+   font-size: 1.2em;
+ }
+
+ .navFooter li a{
+  transition: all 0.3s ease 0s;
+}
+
+.navFooter li a:hover{
+  color: #4169E1;
+}
+

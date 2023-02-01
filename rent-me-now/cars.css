@@ -1,0 +1,745 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&family=Roboto:wght@100;700&display=swap');
+html{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+}
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+header{
+    flex-direction: row;
+    justify-content: space-around;  
+}
+.header1{
+    flex-direction: row;
+    justify-content: space-around;
+    height: 76px;
+    
+}
+#linecontainer{
+    position: absolute;
+    width: 3%;
+    height: 6%;
+    right: 2%;
+    top: 3%;
+    cursor: pointer;
+    }
+  
+    #firstline{
+      position: relative;
+      width: 70%;
+      height: 0px;
+      left: 0%;
+      top: 20%;
+      border-top: 2px solid #000000;
+      cursor: pointer;
+    }
+  
+    #secondline{
+      position: relative;
+      width: 40%;
+      height: 0px;
+      left: 0%;
+      top: 40%;
+      border-top: 2px solid #000000;
+      cursor: pointer;
+    }
+  
+    #thirdline{
+      position: relative;
+      width: 70%;
+      height: 0px;
+      left: 0%;
+      top: 60%;
+      border-top: 2px solid #000000;
+      cursor: pointer;
+      
+    }
+
+    #nav-sidebar{
+        position: absolute;
+        right: -6%;
+        bottom: 0;
+        width: 0px;
+        height: calc(90vh);
+        background-color: #FFFFFF;
+        z-index: 1000;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      #nav-sidebar ul{
+        padding-top: 60px;
+        overflow: hidden;
+        visibility: hidden;
+      }
+      
+      #nav-sidebar ul li{
+        line-height: 60px;
+        list-style: none;
+      }
+      
+      #nav-sidebar ul li span, #nav-sidebar ul li a{
+        position: relative;
+        left: 10%;
+        display: block;
+        height: 60px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #000000;
+        font-family: Roboto;
+        font-size: 30px;
+        white-space: nowrap;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      #nav-sidebar ul li a:hover{
+        text-decoration: underline #5681FF;
+      }
+  #menu {
+    position: absolute;
+    width: 28px;
+    height: 9px;
+    left: 91%;
+    top: 4.5%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    color: #5681ff;
+  }
+
+#logoHeader{
+    position: relative;
+    left: 0%;
+    margin: 3%;
+    height: 66px;
+    top: -37px;
+}
+#boxContainer{
+    margin-top: 1.5em;
+    border: 2px solid #4169E1;
+    padding: 5px;
+    height: 44px;
+    margin-left: 245%;
+    position: relative;
+    left: -2569px;
+    top: -165px;
+    width: 206px;
+}
+td > input[type="text"]{
+    border: none;
+    color: rgb(0, 0, 0);
+}
+.Search:focus{
+    outline:none;
+}
+.Search{
+    position: relative;
+    top: -3px;
+}
+body{
+    overflow-x: hidden;
+}
+main{
+    position: relative;
+    top: -152px;
+    background-color: #4169E1;
+    height: 2089px;
+}
+h1{
+    font-size: 2.5em;
+    color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    margin-left: 1em;
+    padding-top: 1em;
+    text-decoration: white underline;
+    text-underline-offset: 12px;
+}
+.info{
+    color: white;
+    display: block;
+    width: 370px;
+    height: 100px;
+    margin-left: 75%;
+    margin-top: -91px ;
+    margin-bottom: 50px;
+}
+.sNav{
+    font-size: medium;
+    display: flex;
+	list-style: none;
+	margin:  20px 0px;
+    text-decoration: none;
+	color: white;
+	transition: all .5s ease;
+    gap: 12px;
+    text-decoration: white underline;
+    margin-left: 40px;
+}
+
+.sNav :hover{
+    color: rgb(180, 180, 180);
+    text-decoration: rgb(180, 180, 180) underline;
+}
+#Type{
+    color: rgba(255, 255, 255, 0.507);
+    text-decoration: none;
+    font-size: medium;
+    position: relative;
+    top: 8px;
+}
+/*.cars{
+    width: 230px;
+    height: 213px;
+    padding: 20px;
+    background-color: rgb(212, 28, 28);
+    border-radius: 4px;
+    margin-bottom: 30px;
+}*/
+#cars{
+   
+    display: flex;
+    justify-content: space-around;;
+}
+#cars div{
+    background-color: rgb(255, 255, 255);
+    width: 310px;
+    height: 370px;
+    border-radius: 3px;
+}
+.car1 p{
+    text-decoration: overline 2px black;
+    text-align: left;
+    position: relative;
+    top: 40px;
+    left: 40px;
+}
+.CarName{
+    font-size: large;
+    text-align: left;
+    position: relative;
+    top: 70px;
+    left: 40px;
+}
+.Honda{
+    position: relative;
+    left: 40px;
+    top: 75px;
+}
+
+/*----Car2----*/
+.type{
+    text-decoration: overline 2px black;
+    text-align: left;
+    position: relative;
+    top: 40px;
+    left: 40px;
+}
+.Audi{
+    position: relative;
+    left: -49px;
+    top: 90px;
+}
+.engine2{
+    position: relative;
+    left: 36px;
+    top: 108px;
+}
+.CarName2{
+    position: relative;
+    left: 40px;
+    top: -19px;
+}
+/*----Car3----*/
+.Merc{
+    position: relative;
+    left: 39px;
+    top: 70px;
+}
+.engine3{
+    position: relative;
+    left: -179px;
+    top: 109px;
+}
+.CarName3{
+    position: relative;
+    position: relative;
+    left: 39px;
+    top: 53px;
+}
+/*---Special Offer---*/
+.SpecialOffer{
+    width: 1223px;
+    height: 710px;
+    background-color: white;
+    margin: 10%;
+    border-radius: 3px;
+}
+.titleOffer{
+    font-size: xxx-large;
+    margin: 20px;
+    text-decoration: #4169E1 underline;
+    text-underline-offset:14px;
+}
+.rav4{
+    width: 650px;
+    margin: 20px;
+}
+.SpecialOffer h2{
+    margin: -39% 0%;
+    position: relative;
+    left: 696px;
+    font-size: xx-large;
+}
+.infoRav4{
+    font-size: medium;
+    margin: 29%;
+    position: relative;
+    left: 28%;
+    top: 25%;
+}
+.engine4{
+    position: relative;
+    left: 57%;
+    top: -22%;
+}
+
+
+#typeEngine2{
+    position: relative;
+    left: 61%;
+    top: -26%;
+    text-decoration: none;
+}
+.maxKm2{
+    position: relative;
+    left: 57%;
+    top: -22%;
+}
+#Km2{
+    position: relative;
+    left: 61%;
+    top: -26%;
+    text-decoration: none; 
+}
+.trans2{
+    position: relative;
+    left: 57%;
+    top: -22%;
+}
+#trans2{
+    position: relative;
+    left: 61%;
+    top: -26%;
+    text-decoration: none; 
+}
+.seats2{
+    position: relative;
+    left: 81%;
+    top: -44%;
+}
+#seats2{
+    position: relative;
+    left: 85%;
+    top: -48%;
+    font-size: medium;
+    text-decoration: none;
+}
+.lcp2{
+    position: relative;
+    left: 81%;
+    top: -45%;
+}
+#lcp2{
+    position: relative;
+    left: 85%;
+    top: -49%;
+}
+.priceDay2{
+    position: relative;
+    left: 60%;
+    top: -237px;
+    background-color: #4169E1;
+    border: none;
+    width: 158px;
+    height: 54px;
+    color: white;
+    transition: all 0.25s;
+    font-family: 'Roboto Slab', serif;
+}
+.priceDay2:hover{
+    background-color: #3356be;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+.MoreInfo2{
+    position: relative;
+    left: 60%;
+    top: -237px;
+    background-color: white;
+    border: none;
+    width: 158px;
+    height: 54px;
+    border: #4169E1 2px solid;
+    transition: all 0.25s;
+    margin-left: 1%;
+    font-family: 'Roboto Slab', serif;
+}
+.MoreInfo2:hover{
+    background-color: rgb(221, 221, 221);
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+/*-----Second Row Cars---*/
+#engine5{
+    position: relative;
+    left: 11%;
+    top: 19%;
+    text-decoration: none;
+    font-size: small;
+}
+.engine5{
+    position: relative;
+    top: 8px;
+}
+#maxKm5{
+    position: relative;
+    text-decoration: none;
+    font-size: small;
+    top: 19%;
+    left: 11%;
+}
+.maxKm5{
+    position: relative;
+    top: 13px;
+}
+#trans5{
+    position: relative;
+    text-decoration: none;
+    font-size: small;
+    top: 18%;
+    left: 11%;
+}
+.trans5{
+    position: relative;
+    top: 13px;
+}
+#seats5{
+    position: relative;
+    text-decoration: none;
+    font-size: small;
+    left: 65%;
+    top: -9%;
+}
+.seats5{
+    position: relative;
+    top: 13px;
+}
+.seats5{
+    position: relative;
+    top: 13px;
+}
+#lcp5{
+    position: relative;
+    text-decoration: none;
+    font-size: small;
+    top: -8%;
+    left: 64%;
+}
+.lcp5{
+    position: relative;
+    top: 7px;
+}
+.priceDay3{
+    position: relative;
+    left: 13%;
+    top: 9%;
+    background-color: #4169E1;
+    border: none;
+    width: 110px;
+    height: 37px;
+    color: white;
+    transition: all 0.25s;
+    font-family: 'Roboto Slab', serif;
+}
+.priceDay3:hover{
+    background-color: #3356be;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+.MoreInfo3{
+    position: relative;
+    left: 14%;
+    top: 9%;
+    background-color: white;
+    border: none;
+    width: 110px;
+    height: 37px;
+    border: #4169E1 2px solid;
+    transition: all 0.25s;
+    font-family: 'Roboto Slab', serif;
+}
+.MoreInfo5{
+    position: relative;
+    left: 14%;
+    top: 7%;
+    background-color: white;
+    border: none;
+    width: 110px;
+    height: 37px;
+    border: #4169E1 2px solid;
+    transition: all 0.25s;
+    font-family: 'Roboto Slab', serif;
+}
+.MoreInfo5:hover{
+    background-color: rgb(221, 221, 221);
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+.MoreInfo3:hover{
+    background-color: rgb(221, 221, 221);
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+.CarName3{
+    position: relative;
+    text-decoration: none;
+}
+.priceDay4{
+    position: relative;
+    left: 13%;
+    top: 7%;
+    background-color: #4169E1;
+    border: none;
+    width: 110px;
+    height: 37px;
+    color: white;
+    transition: all 0.25s;
+    font-family: 'Roboto Slab', serif;
+}
+.priceDay4:hover{
+    background-color: #3356be;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+.MoreInfo4{
+    position: relative;
+    left: 14%;
+    top: 7%;
+    background-color: white;
+    border: none;
+    width: 110px;
+    height: 37px;
+    border: #4169E1 2px solid;
+    transition: all 0.25s;
+    font-family: 'Roboto Slab', serif;
+}
+.MoreInfo4:hover{
+    background-color: rgb(221, 221, 221);
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+.priceDay6{
+    position: relative;
+    left: 60%;
+    top: -219px;
+    background-color: #4169E1;
+    border: none;
+    width: 158px;
+    height: 54px;
+    color: white;
+    transition: all 0.25s;
+    font-family: 'Roboto Slab', serif;
+}
+.MoreDetails{
+    height: 878px;
+}
+.titleOffer1{
+    position: relative;
+    font-size: xx-large;
+    margin: 20px;
+    text-decoration: #4169E1 underline;
+    text-underline-offset: 14px;
+    position: relative;
+    top: -202px;
+}
+.table{
+    width: 73%;
+    height: 12%;
+    position: relative;
+    top: -27%;
+    left: 19px;
+    border: 3px #4169E1 solid;
+}
+.table1, .table2{
+    border-left: 2px solid #4169E1;
+}
+.price{
+    background-color: #4169E1;
+    color: white;
+}
+.Special{
+    position: relative;
+    top: 113px;
+}
+.img1{
+    margin-left: 40%;
+}
+.img2{
+    position: relative;
+    top: 14%;
+    margin-right: 4%;
+}
+
+.CalcPrice{
+    display: flex;
+    position: relative;
+    left: 911px;
+    top: -39%;
+    background-color: #4169E1;
+    border: none;
+    width: 15%;
+    height: 12%;
+    color: white;
+    transition: all 0.25s;
+}
+.CalcPrice p{
+    text-align: center;
+    padding: 15%;
+    font-size: medium;
+}
+.CalcPrice:hover{
+    background-color: #3356be;
+    cursor: pointer;
+}
+#Blog_Tips{
+    position: relative;
+    top: 20px;
+    left: 54%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+#logoFooter{
+    position: relative;
+    top: -32px;
+    height: 100px;
+    margin-top: 2em;
+  }
+
+  footer{
+    position: relative;
+    top: -111px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #FFFFFF;
+    height: 50px;
+  }
+.logo{
+    position: relative;
+    top: -32px;
+    height: 100px;
+    margin-top: 2em;
+    left: 0%;
+}
+.navList{
+    position: relative;
+        position: relative;
+    left: -26%;
+    top: 47px;
+}
+ .navList > li {
+   color: black;
+   text-decoration: none;
+
+ }
+
+ .navList > li,a {
+  color: black;
+  text-decoration: none;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#home{
+    position: relative;
+    top: -50px;
+    left: 51%;
+    }
+
+    #vehicles{
+    position: relative;
+    top: 0px;
+    left: 38.7%;
+    }
+
+    #services{
+    position: relative;
+    top: 50px;
+    left: 22%;
+    }
+
+    #insurance{
+      position: relative;
+      top: -50px;
+      left: 40%;
+    }
+
+    #contact_us{
+      position: relative;
+      top: 0px;
+      left: 20.7%;
+    }
+
+    #Blog_Tips{
+        position: relative;
+        top: 20px;
+        left: 51.8%;
+    }
+
+    
+
+ .navFooter{
+   list-style-type: none;
+   text-align: center;
+    margin-left: 25em;
+    position: relative;
+    left: -12%;
+}
+ 
+
+ .navFooter li {
+   display: inline-block;
+   padding: 0px 20px;
+   font-size: 1.2em;
+ }
+
+ .navFooter li a{
+  transition: all 0.3s ease 0s;
+}
+
+.navFooter li a:hover{
+  color: #4169E1;
+}
+
+
